@@ -1,8 +1,8 @@
 # Initiation aux biostatistiques avec R pour les internes de pédiatrie
 
-Cette journée de formation a pour objectif de vous fournir les bases en bioinformatique afin de réaliser des analyses cliniques qui vous serviront lors de vos travaux de recherche et notamment au moment de réaliser votre thèse de médecine. 
-Cette formation s'adresse à tous les intenes de pédiatrie. Il n'est pas nécessaire d'avoir de connaissances en codage informatique ou en statistique au préalable.  
-L'objectif est de pouvoir vous fournir le minimum de connaissance qui vous sera utile afin de mener à bien vos projets et vous donner envie de faire vos analyses statistiques vous-mêmes. 
+Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses cliniques dans le cadre de vos recherches et de votre thèse de médecine. 
+Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
+Notre objectif est de vous transmettre les compétences essentielles pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vous-mêmes vos analyses statistiques essentielles. 
 
 ## Pré requis
 Avant la journée de formation il est nécessaire de télécharger et installer le langage informatique que l'on va utiliser (langage R) et la plateforme sur laquelle nous allons faire tourner ce langage (RStudio). 
