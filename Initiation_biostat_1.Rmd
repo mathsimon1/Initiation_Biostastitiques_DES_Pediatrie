@@ -1,0 +1,74 @@
+---
+title: "Apprentissage de R pour les internes"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+#0- Installer les packages nécessaires à l'analyse (à ne faire qu'une seule fois )
+```{r}
+install.packages("dplyr")
+install.packages("arsenal")
+install.packages("kableExtra")
+install.packages("survminer")
+install.packages("survival")
+install.packages("forestmodel")
+```
+
+
+
+#1- Charger les librairies (à faire à chaque fois)
+```{r}
+# Pour manupuler les données
+library(dplyr)
+library(arsenal)
+library(kableExtra)
+# Pour faire des analyses de survies
+library(survminer)
+library(survival)
+library(forestmodel)
+```
+
+#2- Faire une table comparative
+
+##2-1 Charger les données à analyser
+```{r}
+fichier_clinique <- read.csv2("fichier_clinique.csv")
+```
+
+##2-2 - Créer une table d'analyse comparative
+```{r}
+table_clinique <- tableby(Protocole ~ ., fichier_clinique)
+write2word(table_clinique, "table_clinique.docx")
+```
+
+#3 - Créer une courbe de survie
+
+##3-1 Charger données de survie 
+```{r}
+fichier_clinique_survie <- read.csv2("fichier_clinique_data_survie.csv")
+```
+
+##3-2 Faire la courbe de survie
+```{r}
+survie_selon_protocole <- survfit(Surv(os, died) ~  Protocole  , fichier_clinique_survie)
+# Courbe de survie basique
+ggsurvplot(survie_selon_protocole, pval = T)
+# Avec table de risque 
+ggsurvplot(survie_selon_protocole, pval = T, risk.table = T)
+```
+
+#4- Faire un modèle de Cox 
+
+##4-1 Cox univarié 
+```{r}
+cox_univarié <- coxph(Surv(os, died) ~  Protocole  , fichier_clinique_survie)
+print(forest_model(cox_univarié)) 
+```
+
+##4-2 Cox multivarié
+```{r}
+cox_multivarié <- coxph(Surv(os, died) ~  Protocole + Male + Atteinte_SNC , fichier_clinique_survie)
+print(forest_model(cox_multivarié)) 
+```
+
