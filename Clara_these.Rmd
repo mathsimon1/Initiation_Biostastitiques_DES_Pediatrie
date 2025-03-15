@@ -1,0 +1,303 @@
+---
+title: "clara these"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+# Library
+```{r}
+library(dplyr)
+library(stringr)
+library(arsenal)
+library(survival)
+library(survminer)
+library(survcomp)
+library(labelled)
+library(readxl)
+library(viridis)
+library(RColorBrewer)
+library(ggsurvfit)
+library(ggplot2)
+library(tidyverse)
+library(RColorBrewer)
+library(ComplexHeatmap)
+library(corrplot)
+library(discover)
+library(rcompanion)
+library(plotrix)
+library(kableExtra)
+library(gtsummary)
+library(ggpubr)
+library(circlize)
+library(grid)
+library(gridGraphics)
+library(ggplotify)
+library(readxl)
+
+get_column_info <- function(df) {
+  # Check if input is a dataframe
+  if (!is.data.frame(df)) {
+    stop("Input must be a data frame")
+  }
+  
+  # Get column numbers and names
+  column_numbers <- 1:ncol(df)
+  column_names <- names(df)
+  
+  # Get column types
+  column_types <- sapply(df, class)
+  
+  # Get sample values (first few unique values from each column)
+  get_sample_values <- function(x) {
+    unique_vals <- unique(x)
+    sample_vals <- head(unique_vals, 3)  # Show up to 3 unique values
+    return(paste(sample_vals, collapse = ", "))
+  }
+  
+  sample_values <- sapply(df, get_sample_values)
+  
+  # Create the result dataframe
+  column_info <- data.frame(
+    column_number = column_numbers,
+    column_name = column_names,
+    data_type = column_types,
+    sample_values = sample_values,
+    stringsAsFactors = FALSE
+  )
+  
+  return(column_info)
+}
+```
+
+# load data_V1
+```{r}
+clara_data <- read_xlsx("Les donnees.xlsx", sheet = 3)
+clara_data$`No identification` <- NULL
+
+```
+
+# tableby
+```{r}
+my_controls <- tableby.control(test = T,
+                               numeric.stats = c("medianq1q3", "Nmiss2"),
+                               stats.labels = list( meansd = "Mean (SD)",
+                                                    medianq1q3 = "Median (Q1, Q3)",
+                                                    Nmiss2 = "Missing"
+                                                   ),
+                               numeric.test = "kwt",
+                               cat.test = "fe",
+                               simulate.p.value = TRUE
+                               )
+names(clara_data)
+table_one <- tableby( `Abcédation post op` ~ .,    data =  clara_data   ,  control = my_controls)
+
+write2html(table_one ,"table_clara.html", term.name = TRUE,pfootnote=TRUE,digits = 1)
+write2word(table_one, "table_clara.docx", term.name = TRUE,pfootnote=TRUE,digits = 1)
+```
+
+
+https://larmarange.github.io/guide-R/analyses/regression-logistique-binaire.html
+
+
+## data clara
+```{r}
+
+
+data_clara <- read_excel("Data Mars25/11mars/Analyses univariée abcédation post op_MS.xlsx")
+data_clara$`No identification` <- NULL
+data_clara$`Age à l'admission` <- NULL
+data_clara$`BLSE couverte par ATB empirique ?` <- NULL
+data_clara$`Ratrappage par changement d'ATB ?` <- NULL
+data_clara[,1:ncol(data_clara)] <- apply(data_clara[,1:ncol(data_clara)] , 2, as.character)
+data_clara$`Age en chiffres` <- as.numeric(data_clara$`Age en chiffres`)
+
+glimpse(data_clara)
+
+
+library(stringr)
+library(dplyr)
+data_clara  <- data_clara  %>% 
+  mutate(across(where(is.character), str_trim))
+
+data_clara[data_clara == "0"]<- "No" 
+data_clara[data_clara == "1"]<- "Yes" 
+class(data_clara)
+
+
+data_clara |> 
+  tbl_summary(
+    by = abcedation_post_op,
+  ) |>
+  add_overall(last = TRUE) |> 
+  add_p() |> 
+  bold_labels() |> 
+  modify_spanning_header(
+    update = all_stat_cols() ~ "**Abcedation post op**"
+  )
+
+
+tf <- tempfile("example", fileext = "clara_test.docx")
+
+data_clara |> 
+  tbl_summary(
+    by = abcedation_post_op,
+  ) |>
+  add_overall(last = TRUE) |> 
+  add_p() |> 
+  bold_labels() |> 
+  modify_spanning_header(
+    update = all_stat_cols() ~ "**Abcedation post op**"
+  )|> 
+  as_gt() |> 
+  gt::gtsave(filename = tf)
+
+
+
+data_clara$abcedation_post_op <- as.numeric(data_clara$abcedation_post_op)
+
+data_clara$`Antibio reçu 48h`
+
+fever_post_op
+
+tbl_uni <-
+  data_clara |>
+  tbl_uvregression(
+    y = abcedation_post_op,
+    include = c(`Drain/redon oui/non` ,`Classes d'age`,`Antibio reçu 48h`,fever_post_op),
+    method = glm,
+    method.args = list(family = binomial),
+    exponentiate = TRUE
+  ) |> 
+  modify_column_hide("stat_n")
+
+tbl_uni
+
+mod <- glm(
+  abcedation_post_op ~ `Drain/redon oui/non` + fever_post_op + `Classes d'age` + `Antibio reçu 48h`,
+  family = binomial,
+  data = data_clara
+)
+
+mod |> 
+  tbl_regression(intercept = TRUE) |> 
+  bold_labels()
+
+mod |> 
+  tbl_regression(exponentiate = TRUE) |> 
+  bold_labels()
+
+mod |> 
+  ggstats::ggcoef_model(exponentiate = TRUE)
+
+mod |> 
+  ggstats::ggcoef_table(exponentiate = TRUE)
+
+
+tbl_desc <-
+  data_clara |> 
+  tbl_summary(
+    by = abcedation_post_op,
+   include = c(`Drain/redon oui/non` ,`Classes d'age`,`Antibio reçu 48h`,fever_post_op),
+    statistic = all_categorical() ~ "{p}% ({n}/{N})",
+    percent = "row",
+    digits = all_categorical() ~ c(1, 0, 0)
+  ) |> 
+  modify_column_hide("stat_1") |> 
+  modify_header("stat_2" ~ "**Abcedation post op**")
+
+tbl_uni <-
+  data_clara |>
+  tbl_uvregression(
+    y = abcedation_post_op,
+  include = c(`Drain/redon oui/non` ,`Classes d'age`,`Antibio reçu 48h`,fever_post_op),
+    method = glm,
+    method.args = list(family = binomial),
+    exponentiate = TRUE
+  ) |> 
+  modify_column_hide("stat_n")
+
+tbl_multi <-
+  mod |> 
+  tbl_regression(exponentiate = TRUE)
+
+list(tbl_desc, tbl_uni, tbl_multi) |> 
+  tbl_merge(
+    tab_spanner = c(
+      NA,
+      "**Univariate analysis**",
+      "**Multivariate analysis**"
+    )
+  ) |> 
+  bold_labels()
+```
+
+
+
+## Alluvial plot 
+```{r}
+df_dyn <- read_xlsx("Data Mars25/11mars/Données pour figures dynamiques.xlsx")
+df_dyn_filter <- data.frame(first_atb = as.character(df_dyn$`COMBO ATB empirique`), second_atb = as.character(df_dyn$`COMBO ATB 1ère révision`), third_atb = as.character(df_dyn$`COMBO ATB 2e révision`), id = df_dyn$`No identification`, abced = as.character(df_dyn$`Abcédation post op...12`))
+
+df_alluvial_atb <- df_dyn_filter %>%
+  pivot_longer(
+    cols = -c("id", "abced"), names_to = c("atb_time"),
+     values_to = "atb_type")
+
+df_alluvial_atb$atb_type <- as.factor(df_alluvial_atb$atb_type )
+```
+
+
+
+```{r}
+# Get the original brewer palette
+original_palette <- brewer.pal(8, "RdYlBu")
+
+# Create a custom palette with more colors (e.g., 15)
+custom_palette <- colorRampPalette(original_palette)(23)
+
+
+ggplot(df_alluvial_atb,
+       aes(x = atb_time, stratum = atb_type, alluvium = id,
+           fill = atb_type, label = atb_type)) +
+    scale_fill_manual(values = custom_palette) +
+  geom_flow(stat = "alluvium", lode.guidance = "frontback",  color = "darkgray") +
+  geom_stratum() +
+   geom_text(stat = "stratum", size = 3, color = "white") +
+  ggtitle("Antibiotherapy prescription evolution alongside hospitalisation") + 
+  theme_minimal() +
+  facet_wrap(~abced, scales = "free")
+```
+
+
+# Tableby V2 
+```{r}
+data_clara <- read_excel("/Users/mathieusimonin/Travail/Clara_thèse/Tout en un.xlsx", sheet = 1)
+data_clara$`No identification` <- NULL
+data_clara$admission_date <- NULL
+data_clara$discharge_date <- NULL
+data_clara$birth <- NULL
+
+data_clara  <- data_clara  %>% 
+  mutate(across(where(is.character), str_trim))
+
+data_clara$sex[data_clara$sex == "0"]<- "Female"
+data_clara$sex[data_clara$sex == "1"]<- "Male"
+
+fusion_test[,3:45][fusion_test[,3:45] == 1] <- "Mut"
+
+data_clara[, 5:12] <- lapply(data_clara[, 5:12], as.character)
+data_clara[, 5:12][data_clara[, 5:12] == 0] <- "No" 
+data_clara[, 5:12][data_clara[, 5:12] == 1] <- "Yes" 
+
+get_column_info(data_clara)
+
+data_clara |> 
+  tbl_summary(
+  ) |>
+  bold_labels() |> 
+  modify_spanning_header(
+    update = all_stat_cols() ~ "**Patients characteristics**"
+  )
+```
+
