@@ -76,3 +76,6 @@ Dans cet exemple nous avons :
 - harmoniser les valeurs des variables pour être cohérent (leucémie aiguë et leucémie)
 - supprimer les accents et les caractères spéciaux
 - remplacer les données manquantes par des cellules vides
+
+### Télécharger le dossier 
+Pour commencer à travailler sur les données nous allons utiliser les données cliniques de patients ayant été traités pour 
