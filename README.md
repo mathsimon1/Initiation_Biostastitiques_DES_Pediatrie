@@ -84,3 +84,11 @@ Dans cet exemple nous avons :
 ### Télécharger le dossier 
 Afin d'illuster comment R peut vous aider à 
 Pour commencer à travailler sur les données nous allons utiliser les données cliniques de patients ayant été traités pour 
+
+
+## Liens utiles
+
+ - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R]([https://awesomeopensource.com/project/elangosundar/awesome-README-templates](https://larmarange.github.io/analyse-R/combiner-plusieurs-graphiques.html)). Un pdf regroupant l'ensemble des infos est également téléchargeable (https://larmarange.github.io/analyse-R/analyse-R.pdf) 
+ - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin ](https://www.sthda.com/french/)
+
+
