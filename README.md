@@ -7,7 +7,7 @@ Cette formation d'une journée vise à vous transmettre les fondamentaux en bioi
 
 Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
 
-Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vos analyses statistiques. 
+Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques afin de vous donner l'assurance et l'envie de réaliser vos analyses statistiques mais également de générer des graphiques et des courbes de survie. 
 
 R est un langage de programmation utilisé principalement dans le cadre de la recherche biomédicale. Il s'utilise via RStudio. Il s'agit d'un outil très puissant permettant de faire des analyses statistiques mais il permet également de générer des figures de grande qualité que vous pourrez utiliser directement dans vos publications.
 
@@ -23,7 +23,7 @@ RStudio sert principalement à:
 - Organiser vos projets d'analyse statistique
 - Créer des rapports et documents combinant texte et analyses
 
-C'est essentiellement un environnement de travail convivial pour R, comme un logiciel tout-en-un qui rend l'analyse de données beaucoup plus simple que de travailler directement avec R dans une console basique.
+C'est essentiellement un environnement de travail convivial pour R, comme un logiciel tout-en-un qui rend l'analyse de données beaucoup plus simple que de travailler directement avec R dans une console basique. Comme R, il est totalement gratuit. 
 
   ### Installer R
 | Système d'exploitation | Lien téléchargement |
