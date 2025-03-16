@@ -108,8 +108,15 @@ Il faut ouvrir le fichier du projet sur lequel nous allons travailler en double-
 Rstudio se lancera automatiquement pour ouvrir votre projet. 
 
 #### Présentation de l'environnement de travail 
-Voici à quoi ressemble le projet une fois ouvert : 
+Une fois que le projet est ouvert vous arriverez sur un écran vide. 
+Il faut charger le script **Initiation_biostat_script.rmd** que vous trouverez en bas à droite. 
 
+<img width="612" alt="interface" src="https://github.com/user-attachments/assets/c6cb3fa6-4bbb-49cd-ae8e-998874d5165a" />
+
+Pour charger le script il suffit de cliquer dessus. 
+Une fois que le script se charge vous devez installer les packages avec la fonction install.packages("Nom du package qui vous intéresse"). Cela vous permettra ensuite de les charger avec la fonction library("Nom du package qui vous intéresse").
+
+Un package est comme une boîte à outils spécialisée pour R. Chaque package contient un ensemble de fonctions, de données et de documentation qui étendent les capacités de base de R pour réaliser des tâches spécifiques. Quand on dit "charger une librairie", cela signifie activer un package pour l'utiliser dans votre session R actuelle.
 
 ## Liens utiles
 
