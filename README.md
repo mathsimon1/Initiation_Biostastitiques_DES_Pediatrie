@@ -35,6 +35,9 @@ Une fois R correctement installé, rendez-vous sur http://www.rstudio.com/produc
 
 Choisissez bien le lien de téléchargement pour RStudio (lien n°2) ne téléchargez pas à nouveau R. 
 
+<img width="500" alt="install Rstudio" src="https://github.com/user-attachments/assets/272e80b7-8e0a-47ee-9d8b-c5f64df0bbf8" />
+
+
 ## Organisation de la journée de formation
 
 La journée va s'organiser en deux parties. Au cours de la matinée nous verrons comment organiser le recueil des informations en vue de réaliser des analyses statistiques dans R. 
