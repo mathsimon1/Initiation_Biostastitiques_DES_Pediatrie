@@ -87,14 +87,28 @@ Vous devez télécharger ce dossier en cliquant sur le lien suivant :
 [Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19274651/Biostat_DES_pediatrie.zip)
 
 Voici ce que contient ce dossier: 
+- Un fichier qui correspond au projet sur le lequel nous allons travailler : **Initiation_biostat_Projet.Rproj**
+  * Remarque sur le fichier projet .Rproj : Un projet dans R est une façon d'organiser votre travail qui facilite grandement la gestion de vos analyses. C'est un dossier spécial qui regroupe tous les éléments liés à une même analyse ou étude. C'est comme avoir un classeur bien organisé pour chaque étude, avec toutes les données et analyses rangées ensemble.
+
 - Deux fichiers excel sous la forme "csv" que nous utiliserons pour travailler lors de la session : **fichier_clinique_data_survie.csv** et **fichier_clinique.csv**
   * Remarque sur les fichiers .csv : il s'agit d'une variante des fichiers excel souvent utilisée quand on fait de la bioinformatique car ils permettent de stocker un grand nombre de colonnes et de lignes avec une taille très limitée. Pour générer un fichier excel vous devez choisir cette extension au moment de sauvegarder votre fichier excel (enregistrer sous puis choisir format csv). A noter que l'on peut également charger des fichiers excel de type classiques (.xls ou .xlsx).
 
-    Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers
-En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers
+    Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers. En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers
 
 - Un fichier contenant le script de notre projet: **Initiation_biostat_script.rmd**
-  $Remarque sur les script :Un script dans R est simplement un fichier texte contenant une série d'instructions ou de commandes R qui peuvent être exécutées ensemble. Un script est comme une recette de cuisine: une liste d'instructions à suivre dans un ordre précis pour obtenir le résultat souhaité. Vous pourrez le reconnaître par son extension (.rmd)
+  * Remarque sur les script :Un script dans R est simplement un fichier texte contenant une série d'instructions ou de commandes R qui peuvent être exécutées ensemble.
+
+    Un script est comme une recette de cuisine: une liste d'instructions à suivre dans un ordre précis pour obtenir le résultat souhaité. 
+
+    Vous pourrez le reconnaître par son extension (.rmd)
+
+### Ouverture du projet 
+Une fois le téléchargement réalisé vous allez décompresser le fichier. 
+Il faut ouvrir le fichier du projet sur lequel nous allons travailler en double-cliquant sur le fichier **Initiation_biostat_Projet.Rproj**
+Rstudio se lancera automatiquement pour ouvrir votre projet. 
+
+#### Présentation de l'environnement de travail 
+Voici à quoi ressemble le projet une fois ouvert : 
 
 
 ## Liens utiles
