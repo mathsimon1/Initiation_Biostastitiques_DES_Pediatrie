@@ -93,6 +93,9 @@ Voici ce que contient ce dossier:
     Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers
 En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers
 
+- Un fichier contenant le script de notre projet: **Initiation_biostat_script.rmd**
+  $Remarque sur les script :Un script dans R est simplement un fichier texte contenant une série d'instructions ou de commandes R qui peuvent être exécutées ensemble. Un script est comme une recette de cuisine: une liste d'instructions à suivre dans un ordre précis pour obtenir le résultat souhaité. Vous pourrez le reconnaître par son extension (.rmd)
+
 
 ## Liens utiles
 
