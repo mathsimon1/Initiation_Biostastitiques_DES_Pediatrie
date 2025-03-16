@@ -143,7 +143,7 @@ Il est nécessaire d'avoir une connexion internet pour installer les packages. C
 # Félicitations ! 
 Si vous êtes arrivés jusqu'ici vous avez réussi à installer R et son environnement (RStudio). Vous avez téléchargé le dossier à partir duquel nous travaillerons lors de la journée de formation et vous avez peut-être même réussi à installer différents packages. 
 
-Si ce n'est pas le cas, pas d'inquiétude nous reverrons tout ensemble lors de cette journée ! 
+Si ce n'est pas le cas, pas d'inquiétude nous reverrons tout cela ensemble lors de cette journée ! 
 
 Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai avec plaisir : 
 **mathieu.simonin@aphp.fr**
