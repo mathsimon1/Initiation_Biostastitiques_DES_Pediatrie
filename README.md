@@ -53,23 +53,23 @@ Concernant la valeur des variables :
 
 Exemple d'un mauvais recueil :
 
-| Nom du patient | Age au diagnostic | ATCD 
-| :-------- | :------- |:------- |
-| Antoine |  13 | aucun 
-| Maxime | 10 | leucémie aiguë
-| Clémence | 8 | leucémie 
-| Armand | 6 | pas d'atcd 
-| Jean | 4 | données manquantes
+| Nom du patient | Age au diagnostic | ATCD | 2nd cancer 
+| :-------- | :------- |:------- |:------- |
+| Antoine |  13 | aucun | non
+| Maxime | 10 | leucémie aiguë| oui
+| Clémence | 8 | leucémie | ?
+| Armand | 6 | pas d'atcd | non
+| Jean | 4 | données manquantes | 1
 
 Et la correction 
 
-| nom | age_diagnostic | atcd 
-| :-------- | :------- |:------- |
-| antoine |  13 | aucun
-| maxime | 10 | leucemie_aigue
-| clemence | 8 | leucemie_aigue
-| armand | 6 | aucun
-| jean | 4 | 
+| nom | age_diagnostic | atcd | second_cancer 
+| :-------- | :------- |:------- |:------- |
+| antoine |  13 | aucun| 0
+| maxime | 10 | leucemie_aigue| 1
+| clemence | 8 | leucemie_aigue| 
+| armand | 6 | aucun| 0
+| jean | 4 | | 1
 
 Dans cet exemple nous avons : 
 - supprimer les espaces entre les mots
