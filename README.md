@@ -101,7 +101,7 @@ Voici ce que contient ce dossier:
 - Deux fichiers excel sous la forme "csv" que nous utiliserons pour travailler lors de la session : **fichier_clinique_data_survie.csv** et **fichier_clinique.csv**
   * Remarque sur les fichiers .csv : il s'agit d'une variante des fichiers excel souvent utilisée quand on fait de la bioinformatique car ils permettent de stocker un grand nombre de colonnes et de lignes avec une taille très limitée. Pour générer un fichier excel vous devez choisir cette extension au moment de sauvegarder votre fichier excel (enregistrer sous puis choisir format csv). A noter que l'on peut également charger des fichiers excel de type classiques (.xls ou .xlsx).
 
-    Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers. En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers
+    Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers. En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers. Si vous trouvez cela obscur, c'est normal ! Nous reverrons cela pendant la journée. 
 
 - Un fichier contenant le script de notre projet: **Initiation_biostat_script.rmd**
   * Remarque sur les script :Un script dans R est simplement un fichier texte contenant une série d'instructions ou de commandes R qui peuvent être exécutées ensemble.
@@ -128,13 +128,20 @@ Une fois que le script se charge vous devez installer les packages avec la fonct
 
 <img width="612" alt="interface_V2" src="https://github.com/user-attachments/assets/3f62c331-b58b-4d52-99a0-25fd32328d1a" />
 
-Les lignes de codes sont écrites au sein de chunk (ou "bloc de code"). Un chunk est délimité par trois guillemets (```) au début et à la fin, avec {r} juste après les premiers guillemets. Pour exécuter le code il faut cliquer sur la flèche verte en haut à droite. 
+Les lignes de codes sont écrites au sein de chunk (ou "bloc de code"). Un chunk est délimité par trois guillemets (```) au début et à la fin, avec {r} juste après les premiers guillemets. 
+
+Pour exécuter le code contenu dans un chunk il faut cliquer sur la flèche verte en haut à droite du chunk. 
+
 Vous ne pourrez écrire du code que dans ces zones. Cela vous permet de créer des sessions dans votre script que vous pourrez exécuter de façon indépendante. 
+
 Vous pouvez facilement insérer un chunk avec le bouton "Insert".
 
-En exécutant le 1° chunk vous lancerez l'installation des différents packages que nous utiliserons pendant la session. Il est nécessaire d'avoir une connexion internet pour installer les packages. Cette installation ne doit se faire qu'une seule fois alors que le chargement des packages avec la fonction library() se fera à chaque fois en fonction des packages que vous souhaiterez utiliser dans votre projet. 
+En exécutant le 1° chunk vous lancerez l'installation des différents packages que nous utiliserons pendant la session. 
 
-Si vous êtes arrivés jusqu'ici vous avez réussi à installer R et son environnement 
+Il est nécessaire d'avoir une connexion internet pour installer les packages. Cette installation ne doit se faire qu'une seule fois alors que le chargement des packages avec la fonction library() se fera à chaque fois en fonction des packages que vous souhaiterez utiliser dans votre projet. 
+
+# Félicitations ! 
+Si vous êtes arrivés jusqu'ici vous avez réussi à installer R et son environnement (RStudio). Vous avez téléchargé le dossier à partir duquel nous travaillerons lors de la journée de formation. 
 
 ## Liens utiles
 
