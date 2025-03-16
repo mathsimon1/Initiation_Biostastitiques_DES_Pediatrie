@@ -82,13 +82,18 @@ Dans cet exemple nous avons :
 - remplacer les données manquantes par des cellules vides
 
 ### Télécharger le dossier 
-Afin d'illuster comment R peut vous aider à 
-Pour commencer à travailler sur les données nous allons utiliser les données cliniques de patients ayant été traités pour 
+Nous allons travailler sur des données cliniques issues de patients adultes et pédiatriques pris en charge pour une leucémie aiguë. 
+Vous devez télécharger ce dossier en cliquant sur le lien suivant : 
+[Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19274651/Biostat_DES_pediatrie.zip)
+
+Voici ce que contient ce dossier: 
+- 2 fichiers 
 
 
 ## Liens utiles
 
  - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R :([https://larmarange.github.io/analyse-R/]). Un pdf regroupant l'ensemble des infos est également disponible : ([https://larmarange.github.io/analyse-R/analyse-R.pdf]) 
  - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin :([https://www.sthda.com/french/])
+
 
 
