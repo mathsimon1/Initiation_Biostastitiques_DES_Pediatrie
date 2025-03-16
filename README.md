@@ -83,9 +83,10 @@ Et la correction
 | jean | 4 | | 1
 
 Dans cet exemple nous avons : 
-- supprimer les espaces entre les mots
-- harmoniser les valeurs des variables pour être cohérent (leucémie aiguë et leucémie)
-- supprimer les accents et les caractères spéciaux
+- corriger le nom des colonnes pour éviter qu'elle ne commence par un chiffre 
+- supprimer les espaces entre les mots (à la fois dans le nom des colonnes et la valeur des variables)
+- harmoniser les valeurs des variables pour être cohérent ("leucémie aiguë" et "leucémie")
+- supprimer les accents et les caractères spéciaux (à la fois dans le nom des colonnes et la valeur des variables)
 - remplacer les données manquantes par des cellules vides
 
 ### Télécharger le dossier 
