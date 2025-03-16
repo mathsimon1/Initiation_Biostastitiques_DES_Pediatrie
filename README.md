@@ -95,7 +95,7 @@ Dans cet exemple nous avons :
 ### Télécharger le dossier 
 Nous allons travailler sur des données cliniques issues de patients adultes et pédiatriques pris en charge pour une leucémie aiguë. 
 Vous devez télécharger ce dossier en cliquant sur le lien suivant : 
-[Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19275115/Biostat_DES_pediatrie.zip)
+[Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19275319/Biostat_DES_pediatrie.zip)
 
 Voici ce que contient ce dossier: 
 - Un fichier qui correspond au projet sur le lequel nous allons travailler : **Initiation_biostat_Projet.Rproj**
