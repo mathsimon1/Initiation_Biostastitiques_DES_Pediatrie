@@ -87,7 +87,11 @@ Vous devez télécharger ce dossier en cliquant sur le lien suivant :
 [Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19274651/Biostat_DES_pediatrie.zip)
 
 Voici ce que contient ce dossier: 
-- 2 fichiers 
+- Deux fichiers excel sous la forme "csv" que nous utiliserons pour travailler lors de la session : **fichier_clinique_data_survie.csv** et **fichier_clinique.csv**
+  * Remarque sur les fichiers .csv : il s'agit d'une variante des fichiers excel souvent utilisée quand on fait de la bioinformatique car ils permettent de stocker un grand nombre de colonnes et de lignes avec une taille très limitée. Pour générer un fichier excel vous devez choisir cette extension au moment de sauvegarder votre fichier excel (enregistrer sous puis choisir format csv). A noter que l'on peut également charger des fichiers excel de type classiques (.xls ou .xlsx).
+
+    Les anglo-saxons ont des fichiers csv où les colonnes sont séparées par des virgules, et les unités et décimales sont séparées par un point (utiliser **read.csv()** pour ouvrir ces fichiers
+En France, on utilise un format où les colonnes sont séparées par des points-virgules, et les décimales par des virgules (utiliser **read.csv2()** pour ouvrir ces fichiers
 
 
 ## Liens utiles
