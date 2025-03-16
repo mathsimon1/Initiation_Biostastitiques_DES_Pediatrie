@@ -116,7 +116,15 @@ Il faut charger le script **Initiation_biostat_script.rmd** que vous trouverez e
 Pour charger le script il suffit de cliquer dessus. 
 Une fois que le script se charge vous devez installer les packages avec la fonction install.packages("Nom du package qui vous intéresse"). Cela vous permettra ensuite de les charger avec la fonction library("Nom du package qui vous intéresse").
 
-Un package est comme une boîte à outils spécialisée pour R. Chaque package contient un ensemble de fonctions, de données et de documentation qui étendent les capacités de base de R pour réaliser des tâches spécifiques. Quand on dit "charger une librairie", cela signifie activer un package pour l'utiliser dans votre session R actuelle.
+**Un package** est comme une boîte à outils spécialisée pour R. Chaque package contient un ensemble de fonctions, de données et de documentation qui étendent les capacités de base de R pour réaliser des tâches spécifiques. Quand on dit **"charger une librairie"**, cela signifie activer un package pour l'utiliser dans votre session R actuelle.
+
+<img width="612" alt="interface_V2" src="https://github.com/user-attachments/assets/3f62c331-b58b-4d52-99a0-25fd32328d1a" />
+
+Les lignes de codes sont écrites au sein de chunk (ou "bloc de code"). Un chunk est délimité par trois guillemets (```) au début et à la fin, avec {r} juste après les premiers guillemets. Pour exécuter le code il faut cliquer sur la flèche verte en haut à droite. 
+Vous ne pourrez écrire du code que dans ces zones. Cela vous permet de créer des sessions dans votre script que vous pourrez exécuter de façon indépendante. 
+Vous pouvez facilement insérer un chunk avec le bouton "Insert".
+
+En exécutant le 1° chunk vous lancerez l'installation des différents packages que nous utiliserons pendant la session. Il est nécessaire d'avoir une connexion internet pour installer les packages. Cette installation ne doit se faire qu'une seule fois alors que le chargement des packages avec la fonction library() se fera à chaque fois en fonction des packages que vous souhaiterez utiliser dans votre projet. 
 
 ## Liens utiles
 
