@@ -88,8 +88,7 @@ Pour commencer à travailler sur les données nous allons utiliser les données 
 
 ## Liens utiles
 
- - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R. ([https://larmarange.github.io/analyse-R/combiner-plusieurs-graphiques.html]).
- - Un pdf regroupant l'ensemble des infos est également téléchargeable ([https://larmarange.github.io/analyse-R/analyse-R.pdf]) 
- - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin ]([https://www.sthda.com/french/])
+ - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R :([https://larmarange.github.io/analyse-R/]). Un pdf regroupant l'ensemble des infos est également disponible : ([https://larmarange.github.io/analyse-R/analyse-R.pdf]) 
+ - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin :([https://www.sthda.com/french/])
 
 
