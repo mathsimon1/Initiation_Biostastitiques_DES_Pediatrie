@@ -3,19 +3,19 @@
 
 # Initiation aux biostatistiques avec R pour les internes de pédiatrie
 
-Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses cliniques dans le cadre de vos recherches et de votre thèse de médecine. 
+Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses statistiques dans le cadre de vos recherches et notamment de votre thèse de médecine. 
 
 Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
 
-Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vous-mêmes vos analyses statistiques essentielles. 
+Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vos analyses statistiques. 
 
-R est un langage de programmation utilisé principalement dans le cadre de la recherche biomédicale. Il s'utilise via RStudio. Il s'agit d'un outil très puissant permettant de faire de statistiques mais également des figures de grande qualité que vous retrouverez dans la plupart des travaux publiés dans de grandes revues. 
+R est un langage de programmation utilisé principalement dans le cadre de la recherche biomédicale. Il s'utilise via RStudio. Il s'agit d'un outil très puissant permettant de faire des analyses statistiques mais il permet également de générer des figures de grande qualité que vous pourrez utiliser directement dans vos publications.
 
-Enfin, il a le mérite d'être totalement gratuit contrairement à la totalité des autres outils de statistiques que vous connaissez (GraphPad Prism, STATA, SAS...)
+Enfin, il a le mérite d'être totalement gratuit contrairement aux autres logiciels de statistiques (GraphPad Prism, STATA, SAS...)
 
 ## Pré requis
 
-Avant la journée de formation il est nécessaire de télécharger et installer le langage informatique que l'on va utiliser (langage R) et la plateforme sur laquelle nous allons faire tourner ce langage (RStudio). 
+Avant la journée de formation il est nécessaire de télécharger et installer le langage informatique que l'on va utiliser (langage R) et la plateforme sur laquelle nous allons utiliser ce langage de programmation (RStudio). 
 
   ### Installer R
 | Système d'exploitation | Lien téléchargement |
@@ -82,4 +82,5 @@ Dans cet exemple nous avons :
 - remplacer les données manquantes par des cellules vides
 
 ### Télécharger le dossier 
+Afin d'illuster comment R peut vous aider à 
 Pour commencer à travailler sur les données nous allons utiliser les données cliniques de patients ayant été traités pour 
