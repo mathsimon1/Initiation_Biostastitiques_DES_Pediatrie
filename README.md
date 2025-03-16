@@ -1,6 +1,9 @@
 <img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
+
 Mathieu Simonin
+
 MCU-PH Service d'hématologie et d'oncologie pédiatrique
+
 Hôpital Armand Trousseau
 
 # Initiation aux biostatistiques avec R pour les internes de pédiatrie
