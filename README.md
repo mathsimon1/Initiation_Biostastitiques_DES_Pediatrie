@@ -7,7 +7,11 @@ Cette formation d'une journée vise à vous transmettre les fondamentaux en bioi
 
 Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
 
-Notre objectif est de vous transmettre les compétences essentielles pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vous-mêmes vos analyses statistiques essentielles. 
+Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques et de vous donner l'assurance et l'envie de réaliser vous-mêmes vos analyses statistiques essentielles. 
+
+R est un langage de programmation utilisé principalement dans le cadre de la recherche biomédicale. Il s'utilise via RStudio. Il s'agit d'un outil très puissant permettant de faire de statistiques mais également des figures de grande qualité que vous retrouverez dans la plupart des travaux publiés dans de grandes revues. 
+
+Enfin, il a le mérite d'être totalement gratuit contrairement à la totalité des autres outils de statistiques que vous connaissez (GraphPad Prism, STATA, SAS...)
 
 ## Pré requis
 
