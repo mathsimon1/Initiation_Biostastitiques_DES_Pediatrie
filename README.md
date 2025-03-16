@@ -32,5 +32,47 @@ Nous verrons ensuite comment charger le fichier excel dans R afin de travailler 
 
 Nous verrons également comment utiliser le package "Arsenal" et la fonction tableby qui permet de comparer rapidement les différences entre deux groupes en réalisant les tests statistiques pour mettre en évidence les différences significatives en termes de caractéristiques cliniques ou biologiques. 
 
-### L'importance de bien recueillir et remplir son tableur excel
+### L'importance de bien recueillir les données en remplissant son tableur excel
 Nous reviendrons sur l'importance d'anticiper la façon dont les données seront collectées. Cette étape est primordiale pour pouvoir travailler correctement ensuite. En effet le langage de programmation informatique est très sensible aux variations et il faut d'emblée intégrer le fait que les données doivent être reportées de façon harmonisée dans le tableur excel qui servira de base à l'analyse. 
+
+Concernant les colonnes, il faut choisir un titre:
+- unique
+- simple (éviter les noms de colonnes trop longs ou trop complexes). Vous pouvez ajouter un fichier excel pour expliquer les variables si elles sont trop complexes ou vous noterez les correspondances entre un chiffre et son explication
+- ne commençant pas par un chiffre
+- ne contenant pas d'espace entre les mots (vous pouvez utiliser l'underscore ou le tiret du bas "_" pour séparer les mots)
+- sans majuscule
+- sans caractères spéciaux (é, è, à, !, ? ...)
+
+Concernant la valeur des variables : 
+- elles doivent être précises (ne pas mettre de phrase)
+- reproductible (si vous utilisez 1 pour "oui" vous devez garder cette notation)
+- faire attention aux espaces "cachés". Ainsi si vous rentrer " 1" et "1", R va considérer 2 valeurs ; " 1" et "1" donc faites attention à ne pas mettre d'espace avant ou après la valeurs
+- sans caractères spéciaux (é, è, à, !, ? ...)
+- ne contenant pas d'espace entre les mots (vous pouvez utiliser l'underscore ou le tiret du bas "_" pour séparer les mots)
+- en cas de données manquantes il faut laisser la case vide. Ne pas mettre ND, NA ou "données manquantes"
+
+Exemple d'un mauvais recueil :
+
+| Nom du patient | Age au diagnostic | ATCD 
+| :-------- | :------- |:------- |
+| Antoine |  13 | aucun 
+| Maxime | 10 | leucémie aiguë
+| Clémence | 8 | leucémie 
+| Armand | 6 | pas d'atcd 
+| Jean | 4 | données manquantes
+
+Et la correction 
+
+| nom | age_diagnostic | atcd 
+| :-------- | :------- |:------- |
+| antoine |  13 | aucun
+| maxime | 10 | leucemie_aigue
+| clemence | 8 | leucemie_aigue
+| armand | 6 | aucun
+| jean | 4 | 
+
+Dans cet exemple nous avons : 
+- supprimer les espaces entre les mots
+- harmoniser les valeurs des variables pour être cohérent (leucémie aiguë et leucémie)
+- supprimer les accents et les caractères spéciaux
+- remplacer les données manquantes par des cellules vides
