@@ -17,6 +17,14 @@ Enfin, il a le mérite d'être totalement gratuit contrairement aux autres logic
 
 Avant la journée de formation il est nécessaire de télécharger et installer le langage informatique que l'on va utiliser (langage R) et la plateforme sur laquelle nous allons utiliser ce langage de programmation (RStudio). 
 
+RStudio sert principalement à:
+- Écrire et exécuter du code R plus facilement
+- Visualiser vos données et résultats dans un même endroit
+- Organiser vos projets d'analyse statistique
+- Créer des rapports et documents combinant texte et analyses
+
+C'est essentiellement un environnement de travail convivial pour R, comme un logiciel tout-en-un qui rend l'analyse de données beaucoup plus simple que de travailler directement avec R dans une console basique.
+
   ### Installer R
 | Système d'exploitation | Lien téléchargement |
 | :-------- | :------- |
@@ -125,6 +133,8 @@ Vous ne pourrez écrire du code que dans ces zones. Cela vous permet de créer d
 Vous pouvez facilement insérer un chunk avec le bouton "Insert".
 
 En exécutant le 1° chunk vous lancerez l'installation des différents packages que nous utiliserons pendant la session. Il est nécessaire d'avoir une connexion internet pour installer les packages. Cette installation ne doit se faire qu'une seule fois alors que le chargement des packages avec la fonction library() se fera à chaque fois en fonction des packages que vous souhaiterez utiliser dans votre projet. 
+
+Si vous êtes arrivés jusqu'ici vous avez réussi à installer R et son environnement 
 
 ## Liens utiles
 
