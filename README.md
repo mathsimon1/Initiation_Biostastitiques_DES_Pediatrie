@@ -172,21 +172,21 @@ read.csv2() : utilise ";" comme séparateur et "," comme décimal (format europ�
 
 # Astuces pour plus tard : 
 ### Renommer des colonnes si nécessaire
-names(donnees_cliniques)[1] <- "ID_Patient"
+_names(donnees_cliniques)[1] <- "ID_Patient"_
 
 ### Convertir des variables en facteurs (pour les variables catégorielles)
-donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
-donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)
+_donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
+donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)_
 
 ### Transformer des données numériques si besoin
-donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)
+_donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)_
 
 ## Gérer les valeurs manquantes
 ### Identifier les valeurs manquantes
-colSums(is.na(donnees_cliniques))
+_colSums(is.na(donnees_cliniques))_
 
 ### Créer un sous-ensemble sans les lignes ayant des valeurs manquantes
-donnees_completes <- na.omit(donnees_cliniques)
+_donnees_completes <- na.omit(donnees_cliniques)_
 
 ### OU remplacer les valeurs manquantes par la moyenne (pour les variables numériques)
-donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
+_donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)_
