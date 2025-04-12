@@ -157,22 +157,32 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
  - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin :([https://www.sthda.com/french/])
 
 
+<details>
 
-# Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique 
+<summary> Première Partie  </summary>
 
-Nous allons commencer par importer le fichier Excel au format CSV sur lequel nous allons travailler. Pour simplifier, placez ce fichier dans le même dossier que votre projet R. Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répertoire de travail actuel pour générer tous les fichiers.
+# Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique
+Nous allons commencer par importer le fichier Excel au format CSV sur lequel nous allons travailler. 
+
+Pour simplifier, placez ce fichier dans le même dossier que votre projet R. 
+
+Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répertoire de travail actuel pour générer tous les fichiers.
 
 ## Pour importer un fichier CSV :
 Il existe deux fonctions principales pour charger un fichier CSV :
-```
+```ruby
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
 ```
 
+</details>
 
-> Astuces pour plus tard : 
+<details>
+
+<summary>Astuces pour plus tard  </summary>
+
 ### Renommer des colonnes si nécessaire
-```
+```ruby
 names(donnees_cliniques)[1] <- "ID_Patient"
 ```
 
@@ -200,3 +210,4 @@ donnees_completes <- na.omit(donnees_cliniques)
 ```
 donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
 ```
+<details>
