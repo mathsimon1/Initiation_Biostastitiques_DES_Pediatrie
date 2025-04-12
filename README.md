@@ -164,29 +164,39 @@ Nous allons commencer par importer le fichier Excel au format CSV sur lequel nou
 
 ## Pour importer un fichier CSV :
 Il existe deux fonctions principales pour charger un fichier CSV :
-
+```
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
+```
 
 
-
-# Astuces pour plus tard : 
+> Astuces pour plus tard : 
 ### Renommer des colonnes si nécessaire
-_names(donnees_cliniques)[1] <- "ID_Patient"_
+```
+names(donnees_cliniques)[1] <- "ID_Patient"
+```
 
 ### Convertir des variables en facteurs (pour les variables catégorielles)
-_donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
-donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)_
+```
+donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
+donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)
+```
 
 ### Transformer des données numériques si besoin
-_donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)_
+```
+donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)
+```
 
 ## Gérer les valeurs manquantes
 ### Identifier les valeurs manquantes
-_colSums(is.na(donnees_cliniques))_
-
+```
+colSums(is.na(donnees_cliniques))
+```
 ### Créer un sous-ensemble sans les lignes ayant des valeurs manquantes
-_donnees_completes <- na.omit(donnees_cliniques)_
-
+```
+donnees_completes <- na.omit(donnees_cliniques)
+```
 ### OU remplacer les valeurs manquantes par la moyenne (pour les variables numériques)
-_donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)_
+```
+donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
+```
