@@ -168,6 +168,31 @@ Pour simplifier, placez ce fichier dans le même dossier que votre projet R.
 
 Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répertoire de travail actuel pour générer tous les fichiers.
 
+## Transformer un fichier Excel en CSV avec Microsoft Excel
+
+1. **Ouvrir le fichier Excel**  
+   - Lancez Excel et ouvrez le fichier `.xlsx` ou `.xls` que vous voulez convertir.  
+
+2. **Vérifier les données**  
+   - Assurez-vous que les données sont bien organisées en lignes et colonnes.  
+   - ⚠️ Un fichier CSV ne garde **qu’une seule feuille** : seule la feuille active sera exportée.  
+
+3. **Exporter en CSV**  
+   - Cliquez sur **Fichier** → **Enregistrer sous**.  
+   - Choisissez l’emplacement où sauvegarder.  
+   - Dans **Type de fichier** (ou **Format**), sélectionnez :  
+     - `CSV (séparateur : point-virgule) (*.csv)` → par défaut en version française.  
+     - `CSV UTF-8 (séparateur : virgule) (*.csv)` → recommandé pour garder les accents et partager à l’international.  
+
+4. **Nommer et enregistrer**  
+   - Donnez un nom à votre fichier et cliquez sur **Enregistrer**.  
+
+5. **Confirmer les messages**  
+   - Excel affichera peut-être un avertissement (perte de mise en forme, formules, plusieurs feuilles, etc.).  
+   - Cliquez sur **Oui** pour continuer.  
+
+---
+
 ## Pour importer un fichier CSV :
 Il existe deux fonctions principales pour charger un fichier CSV :
 ```ruby
