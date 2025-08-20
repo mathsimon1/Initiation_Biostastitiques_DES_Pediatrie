@@ -185,25 +185,12 @@ Nous allons commencer par crééer puis importer un fichier au format CSV
 ---
 
 ## Pour importer un fichier CSV :
-### Il existe trois fonctions principales pour charger un fichier CSV :
+### Il existe deux fonctions principales pour charger un fichier CSV :
 ```ruby
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
 ```
-### Utiliser readr (plus rapide et plus pratique)
-read_csv() détecte automatiquement le séparateur et gère mieux les encodages (UTF-8, accents, etc.).
-### Installer le package si besoin
-```ruby
-install.packages("readr")
-```
-### Charger le package
-```ruby
-library(readr)
-```
-### Importer le fichier CSV
-```ruby
-data <- read_csv("mon_fichier.csv")
-```
+
 
 </details>
 
