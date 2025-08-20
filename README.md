@@ -157,11 +157,7 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
  - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin :([https://www.sthda.com/french/])
 
 # Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique
-Nous allons commencer par importer le fichier Excel au format CSV sur lequel nous allons travailler. 
-
-Pour simplifier, placez ce fichier dans le même dossier que votre projet R. 
-
-Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répertoire de travail actuel pour générer tous les fichiers.
+Nous allons commencer par crééer puis importer un fichier au format CSV 
 
 ## Transformer un fichier Excel en CSV avec Microsoft Excel
 
@@ -174,7 +170,7 @@ Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répe
 
 3. **Exporter en CSV**  
    - Cliquez sur **Fichier** → **Enregistrer sous**.  
-   - Choisissez l’emplacement où sauvegarder.  
+   - Choisissez l’emplacement où sauvegarder. Pour simplifier, placez ce fichier dans le même dossier que votre projet R. Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répertoire de travail actuel pour générer tous les fichiers. 
    - Dans **Type de fichier** (ou **Format**), sélectionnez :  
      - `CSV (séparateur : point-virgule) (*.csv)` → par défaut en version française.  
      - `CSV UTF-8 (séparateur : virgule) (*.csv)` → recommandé pour garder les accents et partager à l’international.  
@@ -189,10 +185,24 @@ Cela facilitera la gestion des chemins de fichiers, puisque R utilisera le répe
 ---
 
 ## Pour importer un fichier CSV :
-Il existe deux fonctions principales pour charger un fichier CSV :
+Il existe trois fonctions principales pour charger un fichier CSV :
 ```ruby
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
+```
+Utiliser readr (plus rapide et plus pratique)
+read_csv() détecte automatiquement le séparateur et gère mieux les encodages (UTF-8, accents, etc.).
+# Installer le package si besoin
+```ruby
+install.packages("readr")
+```
+# Charger le package
+```ruby
+library(readr)
+```
+# Importer le fichier CSV
+```ruby
+data <- read_csv("mon_fichier.csv")
 ```
 
 </details>
