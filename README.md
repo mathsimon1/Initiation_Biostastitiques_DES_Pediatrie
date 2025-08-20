@@ -197,6 +197,7 @@ Le CSV est le format le plus pratique pour importer des données tabulaires dans
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
 ```
+<img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
 
 
 </details>
