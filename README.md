@@ -159,7 +159,7 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
 
 <details>
 
-<summary> Première Partie  </summary>
+# <summary> Première Partie  </summary>
 
 # Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique
 Nous allons commencer par importer le fichier Excel au format CSV sur lequel nous allons travailler. 
