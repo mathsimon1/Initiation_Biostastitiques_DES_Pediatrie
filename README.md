@@ -160,6 +160,8 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
  - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R :([https://larmarange.github.io/analyse-R/]). Un pdf regroupant l'ensemble des infos est également disponible : ([https://larmarange.github.io/analyse-R/analyse-R.pdf]) 
  - [STHDA : un site également très bien fait pour ceux qui veulent aller plus loin :([https://www.sthda.com/french/])
 
+---
+
 # Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique
 Nous allons commencer par crééer puis importer un fichier au format CSV 
 
