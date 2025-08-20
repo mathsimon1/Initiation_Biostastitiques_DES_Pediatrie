@@ -163,7 +163,8 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
 ---
 
 # Première Partie : Importer vos données et crééer une table d'analyse
-Nous allons commencer par crééer puis importer un fichier au format CSV 
+Nous allons commencer par crééer puis importer un fichier au format CSV.
+Le CSV est le format le plus pratique pour importer des données tabulaires dans R, car il est simple, universel et léger.
 
 ## Transformer un fichier Excel en CSV avec Microsoft Excel
 
