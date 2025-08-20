@@ -162,7 +162,7 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
 
 ---
 
-# Première Partie : Importer les données de recueil cliniques et crééer une table d'analyse clinique
+# Première Partie : Importer vos données et crééer une table d'analyse
 Nous allons commencer par crééer puis importer un fichier au format CSV 
 
 ## Transformer un fichier Excel en CSV avec Microsoft Excel
