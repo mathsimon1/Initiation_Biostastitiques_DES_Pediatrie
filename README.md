@@ -154,7 +154,40 @@ Pour toutes questions n'hésitez pas à m'envoyer un mail, je vous répondrai av
 **mathieu.simonin@aphp.fr**
 
 ---
+<summary>Astuces pour plus tard  </summary>
 
+### Renommer des colonnes si nécessaire
+```ruby
+names(donnees_cliniques)[1] <- "ID_Patient"
+```
+
+### Convertir des variables en facteurs (pour les variables catégorielles)
+```
+donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
+donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)
+```
+
+### Transformer des données numériques si besoin
+```
+donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)
+```
+
+## Gérer les valeurs manquantes
+### Identifier les valeurs manquantes
+```
+colSums(is.na(donnees_cliniques))
+```
+### Créer un sous-ensemble sans les lignes ayant des valeurs manquantes
+```
+donnees_completes <- na.omit(donnees_cliniques)
+```
+### OU remplacer les valeurs manquantes par la moyenne (pour les variables numériques)
+```
+donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
+```
+<details>
+
+---
 ## Liens utiles
 
  - [Analyse R : un site très complet et didactique si vous souhaitez aller plus loin dans les analyses statistiques sous R :([https://larmarange.github.io/analyse-R/]). Un pdf regroupant l'ensemble des infos est également disponible : ([https://larmarange.github.io/analyse-R/analyse-R.pdf]) 
@@ -204,35 +237,3 @@ read.csv2() : utilise ";" comme séparateur et "," comme décimal (format europ�
 
 <details>
 
-<summary>Astuces pour plus tard  </summary>
-
-### Renommer des colonnes si nécessaire
-```ruby
-names(donnees_cliniques)[1] <- "ID_Patient"
-```
-
-### Convertir des variables en facteurs (pour les variables catégorielles)
-```
-donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
-donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)
-```
-
-### Transformer des données numériques si besoin
-```
-donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)
-```
-
-## Gérer les valeurs manquantes
-### Identifier les valeurs manquantes
-```
-colSums(is.na(donnees_cliniques))
-```
-### Créer un sous-ensemble sans les lignes ayant des valeurs manquantes
-```
-donnees_completes <- na.omit(donnees_cliniques)
-```
-### OU remplacer les valeurs manquantes par la moyenne (pour les variables numériques)
-```
-donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
-```
-<details>
