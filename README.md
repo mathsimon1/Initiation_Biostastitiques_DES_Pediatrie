@@ -189,7 +189,3 @@ read.csv2() : utilise ";" comme séparateur et "," comme décimal (format europ�
 <img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
 
 
-</details>
-
-<details>
-
