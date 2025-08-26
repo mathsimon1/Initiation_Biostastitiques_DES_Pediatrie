@@ -1,4 +1,4 @@
-<img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
+<img width="949" height="441" alt="image" src="https://github.com/user-attachments/assets/c0aaafe8-7db1-4bb8-ac8a-5db73cd5a10c" /><img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
 
 # Initiation aux biostatistiques avec R 
 
@@ -189,13 +189,19 @@ read.csv2() : utilise ";" comme séparateur et "," comme décimal (format europ�
 ```
 <img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
 
-lorsque l'on importe un fichier dans R il faut lui attribuer un objet en le nommant et en utilisant le symbole "<-" 
-A chaque fois que vous écrirer le nom de l'objet (ici fichier_clinique) R comprendra que vous faites référence au fichier que vous avez chargé dans cet objet. 
-Vous pouvez explorer à quoi ressemble le fichier que vous avez créer en faisant un clic droit sur l'objet, une fenêtre va alors apparaitre dans RStudio pour vous montrer ce que contient votre objet.
-C'est une bonne façon de vérifier que vous avez correctement chargé votre fichier. 
-Voici à quoi ressemble notre objet dans l'exemple en faisant la commande "clic + command" sur mac ou bien "clic + ctl" sur PC. 
+Lorsque l'on importe un fichier dans R il faut lui attribuer un objet en le nommant et en utilisant le symbole "<-" 
+
+A chaque fois que vous aller écrire le nom de l'objet (ici _fichier_clinique_) R comprendra que vous faites référence au fichier que vous avez chargé dans cet objet. 
+
+### Vérifier que vous avez correctement importé votre fichier
+Vous pouvez explorer ce que contient votre objet dans la fenêtre "Environnement" car une fois chargé il apparaitre à cet endroit.
+Vous n'avez qu'à cliquer sur le nom de votre objet pour le faire apparaître dans une nouvelle fenêtre au sein de votre projet. 
+On peut également utiliser un raccourci pour charge l'objet via la commande "command + clic gauche " sur mac ou bien "ctl gauche + clic gauche " sur PC. 
+
+Voici à quoi ressemble notre objet 'fichier_clinique' dans l'exemple 
+
 <img width="1498" height="661" alt="image" src="https://github.com/user-attachments/assets/6ae6c9ab-662d-4ec0-bd24-769ecb40b5a6" />
 
-Si en revanche vous avez utilisé la mauvaise fonction pour lire le csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous : 
+Si en revanche vous avez utilisé la mauvaise fonction pour charger le fichier .csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous : 
 <img width="1488" height="703" alt="image" src="https://github.com/user-attachments/assets/fab8d5a2-64e4-40a2-91e3-fa421fb30a4a" />
 
