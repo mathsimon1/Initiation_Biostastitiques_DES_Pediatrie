@@ -1,6 +1,6 @@
 <img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
 
-# Initiation aux biostatistiques avec R pour les internes de pédiatrie
+# Initiation aux biostatistiques avec R 
 
 Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses statistiques dans le cadre de vos recherches et notamment de votre thèse de médecine. 
 
