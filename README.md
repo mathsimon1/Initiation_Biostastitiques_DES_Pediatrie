@@ -230,9 +230,7 @@ La fonction tableby est un véritable couteau suisse pour créer des tableaux de
 
 Pour utiliser cette fonction il faut donc au préalable avoir installé (une fois au moins) puis chargé (à chaque fois que vous ouvrez votre projet) la librairie Arsenal avec la fonction : library(arsenal).
 
-La fonction tableby se décompose comme cela : 
-
-<img width="443" height="142" alt="image" src="https://github.com/user-attachments/assets/5f88f07f-e027-4d6f-b63b-373c94082a2f" />
+### La fonction tableby se décompose comme cela : 
 
 En premier vous devez donner un nom à la table clinique que vous allez générer en utilisant la fonction tableby (comme le fichier clinique que vous avez crééer en utilisant la fonction read.csv au début). 
 
