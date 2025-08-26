@@ -200,12 +200,13 @@ Vous n'avez qu'à cliquer sur le nom de votre objet pour le faire apparaître da
 
 <img width="949" height="441" alt="image" src="https://github.com/user-attachments/assets/c0aaafe8-7db1-4bb8-ac8a-5db73cd5a10c" />
 
-On peut également utiliser un raccourci pour charge l'objet via la commande "command + clic gauche " sur mac ou bien "ctl gauche + clic gauche " sur PC. 
+On peut également utiliser un raccourci pour charger l'objet via la commande "command + clic gauche " sur mac ou bien "ctl gauche + clic gauche " sur PC. 
 
 Voici à quoi ressemble notre objet 'fichier_clinique' dans l'exemple 
 
 <img width="1498" height="661" alt="image" src="https://github.com/user-attachments/assets/6ae6c9ab-662d-4ec0-bd24-769ecb40b5a6" />
 
-Si en revanche vous avez utilisé la mauvaise fonction pour charger le fichier .csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous : 
+Si en revanche vous avez utilisé la mauvaise fonction pour charger le fichier .csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous :
+Vous n'aurez alors qu'à modifier votre fonction en mettant read.csv à la place de read.csv2 ou inversement et retester si votre fichier s'est correctement chargé. 
 <img width="1488" height="703" alt="image" src="https://github.com/user-attachments/assets/fab8d5a2-64e4-40a2-91e3-fa421fb30a4a" />
 
