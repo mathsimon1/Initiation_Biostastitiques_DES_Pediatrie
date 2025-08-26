@@ -153,7 +153,7 @@ Il est nécessaire d'avoir une connexion internet pour installer les packages. C
 
 ---
 
-# Première Partie : Importer vos données et crééer une table d'analyse
+# Première Partie : Importer vos données 
 Nous allons commencer par crééer puis importer un fichier au format CSV.
 Le CSV est le format le plus pratique pour importer des données tabulaires dans R, car il est simple, universel et léger.
 
@@ -210,3 +210,38 @@ Si en revanche vous avez utilisé la mauvaise fonction pour charger le fichier .
 Vous n'aurez alors qu'à modifier votre fonction en mettant read.csv à la place de read.csv2 ou inversement et retester si votre fichier s'est correctement chargé. 
 <img width="1488" height="703" alt="image" src="https://github.com/user-attachments/assets/fab8d5a2-64e4-40a2-91e3-fa421fb30a4a" />
 
+---
+
+# Deuxième Partie : Faire une analyse comparative avec la fonction tableby
+
+## Utiliser la fonction tableby pour comparer 2 groupes (ou plus) 
+
+Une des grandes force de R est la possibilité d'utiliser des fonctions qui contiennent en réalité de grandes quantités de lignes de codes condensées dans un seul mot. 
+
+Pour résumé grâce aux fonctions générées par d'autres utilisateurs vous allez pouvoir éviter de taper de longues lignes de codes pour réaliser les analyses souhaités. 
+
+Au final vous n'avez pas besoin d'être un bioinformaticien pour utiliser ces fonctions. 
+
+Vous devez seulement vous assurer que la fonction sera en mesure de lire votre table clinique, raison pour laquelle il est indispensable de respecter les consignes données au début de ce tutoriel expliquant la façon de colliger et d'organiser votre table clinique. 
+
+Une des fonction les plus utiles dans R et qui vous fera gagner un temps considérable est la fonction** tableby**.
+
+La fonction tableby est un véritable couteau suisse pour créer des tableaux descriptifs de haute qualité, particulièrement adaptés aux publications scientifiques et aux rapports d'analyse. Elle fait partie du package **arsenal ** développé par la Mayo Clinic.
+
+Pour utiliser cette fonction il faut donc au préalable avoir installé (une fois au moins) puis chargé (à chaque fois que vous ouvrez votre projet) la librairie Arsenal avec la fonction : library(arsenal).
+
+La fonction tableby se décompose comme cela : 
+
+<img width="443" height="142" alt="image" src="https://github.com/user-attachments/assets/5f88f07f-e027-4d6f-b63b-373c94082a2f" />
+
+En premier vous devez donner un nom à la table clinique que vous allez générer en utilisant la fonction tableby (comme le fichier clinique que vous avez crééer en utilisant la fonction read.csv au début). 
+
+Dans la fonction tableby on retrouve en 1° le groupe que vous souhaitez comparer : ici nous voulons comparer les patients traités selon un protocole Adulte vs Pédiatrique. 
+
+Cette information est présente dans le colonne "Protocole" de notre fichier clinique donc il faut mettre le mot "Protocole" en 1° occurence. 
+
+Si par exemple nous avions souhaité comparer les patients atteints d'une atteinte du systeme nerveux central vs les autres nous aurions mis "Atteinte_SNC" à la place de "Protocole".
+
+Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
+
+Tout cela explique pourquoi il faut avoir des noms de colonnes simples, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
