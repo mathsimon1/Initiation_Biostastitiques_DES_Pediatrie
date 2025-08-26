@@ -2,7 +2,7 @@
 
 # Initiation aux biostatistiques avec R 
 
-Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses statistiques dans le cadre de vos recherches et notamment de votre thèse de médecine. 
+Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses statistiques dans le cadre de vos recherches et notamment de votre thèse de médecine ou de votre mémoire.
 
 Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
 
@@ -93,9 +93,10 @@ Dans cet exemple nous avons :
 - remplacer les données manquantes par des cellules vides
 
 ### Télécharger le dossier 
-Nous allons travailler sur des données cliniques issues de patients adultes et pédiatriques pris en charge pour une leucémie aiguë. 
+Nous allons travailler sur des données cliniques issues de patients adultes et pédiatriques pris en charge pour une leucémie aiguë et générés aléatoirement. 
 Vous devez télécharger ce dossier en cliquant sur le lien suivant : 
-[Biostat_DES_pédiatrie.zip](https://github.com/user-attachments/files/19275319/Biostat_DES_pediatrie.zip)
+
+[Biostat_DES_pédiatrie_2025.zip](https://github.com/user-attachments/files/21994926/Biostat_DES_pediatrie_2025.zip)
 
 Voici ce que contient ce dossier: 
 - Un fichier qui correspond au projet sur le lequel nous allons travailler : **Initiation_biostat_Projet.Rproj**
@@ -188,4 +189,13 @@ read.csv2() : utilise ";" comme séparateur et "," comme décimal (format europ�
 ```
 <img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
 
+lorsque l'on importe un fichier dans R il faut lui attribuer un objet en le nommant et en utilisant le symbole "<-" 
+A chaque fois que vous écrirer le nom de l'objet (ici fichier_clinique) R comprendra que vous faites référence au fichier que vous avez chargé dans cet objet. 
+Vous pouvez explorer à quoi ressemble le fichier que vous avez créer en faisant un clic droit sur l'objet, une fenêtre va alors apparaitre dans RStudio pour vous montrer ce que contient votre objet.
+C'est une bonne façon de vérifier que vous avez correctement chargé votre fichier. 
+Voici à quoi ressemble notre objet dans l'exemple en faisant la commande "clic + command" sur mac ou bien "clic + ctl" sur PC. 
+<img width="1498" height="661" alt="image" src="https://github.com/user-attachments/assets/6ae6c9ab-662d-4ec0-bd24-769ecb40b5a6" />
+
+Si en revanche vous avez utilisé la mauvaise fonction pour lire le csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous : 
+<img width="1488" height="703" alt="image" src="https://github.com/user-attachments/assets/fab8d5a2-64e4-40a2-91e3-fa421fb30a4a" />
 
