@@ -291,3 +291,8 @@ Voici ce que cela donne :
 
 <img width="1446" height="822" alt="image" src="https://github.com/user-attachments/assets/3d9ba3aa-a1a6-4478-b0cb-bec9d33d79b4" />
 
+
+## Conclusion sur la fonction tableby
+
+La fonction tableby est très puissante car vous l'aurez compris elle va réaliser une analyse comparative entre les différents groupes de votre colonne en incluant un grand nombre de covariable. Les test statistiques réalisés sont paramêtrables. 
+Tout l'intérêt de cette fonction réside dans la possibilité d'ajouter 
