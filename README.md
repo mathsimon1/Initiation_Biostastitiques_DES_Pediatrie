@@ -294,9 +294,16 @@ Voici ce que cela donne :
 
 ## Conclusion sur la fonction tableby
 
-La fonction tableby est très puissante car vous l'aurez compris elle va réaliser une analyse comparative entre les différents groupes de votre colonne en incluant un grand nombre de covariable. 
-Les tests statistiques réalisés sont paramêtrables. 
+La fonction tableby est très puissante car vous l'aurez compris elle va réaliser une analyse comparative entre les différents groupes de votre colonne en incluant un grand nombre de covariable.
+
+Les tests statistiques réalisés sont paramêtrables. Nous en parlerons plus longuement lors de la journée de formation. 
+
+Pour plus de détails vous pouvez consulter la page dédiée à cette fonction : ([https://cran.r-project.org/web/packages/arsenal/vignettes/tableby.html]) 
+
 L'intérêt de cette fonction est majeure dans la réalisation d'études cliniques. 
+
 Elle vous fera gagner un temps considérable et vous évitera de faire à la main les différents tests classiquement utilisés pour les analyses comparatives (chi2, Fisher, Mann-Whitney...).
+
 Mais surtout, si jamais vous constaté une erreur dans votre recueil clinique et que vous modifié votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. 
+
 Vous n'aurez pas besoin de refaire tous les tests, la fonction tableby le fera pour vous. 
