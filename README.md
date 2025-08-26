@@ -244,7 +244,7 @@ Si par exemple nous avions souhaité comparer les patients atteints d'une attein
 
 Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
 
-Tout cela explique pourquoi il faut avoir des noms de colonnes simples, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
+Tout cela explique pourquoi il faut avoir des noms de colonnes simples, **sans espace**, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
 
 Après le nom de la variable de comparaison que vous avez choisi vous retrouver un tilde (vague) il s'agit d'un symbole que l'on pourrait traduire par "en fonction de" cela veut dire que vous allez comparer la répartition des autres variables en fonction de votre variable d'intérêt. 
 
