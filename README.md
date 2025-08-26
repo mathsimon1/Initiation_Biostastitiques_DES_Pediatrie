@@ -268,7 +268,10 @@ Cette fonction est simple, il suffit de placer en 1° la table_clinique que vous
 
 Il faut bien mettre le nom entre guillemet et terminer par .html pour que R comprenne que vous souhaitez crééer un fichier html. 
 
-La page html ainsi créée se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...). 
+La page html ainsi créée se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...).
+
+<img width="296" height="191" alt="image" src="https://github.com/user-attachments/assets/7df9e0ed-83c0-465c-b140-26fda4fb6bfe" />
+
 Elle s'ouvrira dans votre navigateur internet. 
 Voici ce que cela donne dans notre exemple : 
 
@@ -279,7 +282,11 @@ La 2° solution consiste à crééer directement un fichier word comprenant votr
 <img width="374" height="31" alt="image" src="https://github.com/user-attachments/assets/6b86f8df-97f3-4a12-8426-13d767c0b7b7" />
 
 il faut utiliser la fonction **write2word** selon le même principe que précédemment mais en terminant le nom de votre fichier ainsi créé par .docx.
+
 Une fois encore le fichier word créé se situera dans le répertoire de votre projet. 
+
+<img width="296" height="214" alt="image" src="https://github.com/user-attachments/assets/d5ecb161-6f6b-4acc-ba31-3cc3e411c6fb" />
+
 Voici ce que cela donne : 
 
 <img width="1446" height="822" alt="image" src="https://github.com/user-attachments/assets/3d9ba3aa-a1a6-4478-b0cb-bec9d33d79b4" />
