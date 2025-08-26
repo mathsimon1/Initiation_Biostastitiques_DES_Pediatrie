@@ -224,7 +224,7 @@ Au final vous n'avez pas besoin d'être un bioinformaticien pour utiliser ces fo
 
 Vous devez seulement vous assurer que la fonction sera en mesure de lire votre table clinique, raison pour laquelle il est indispensable de respecter les consignes données au début de ce tutoriel expliquant la façon de colliger et d'organiser votre table clinique. 
 
-Une des fonction les plus utiles dans R et qui vous fera gagner un temps considérable est la fonction** tableby**.
+Une des fonction les plus utiles dans R et qui vous fera gagner un temps considérable est la fonction **tableby**.
 
 La fonction tableby est un véritable couteau suisse pour créer des tableaux descriptifs de haute qualité, particulièrement adaptés aux publications scientifiques et aux rapports d'analyse. Elle fait partie du package **arsenal ** développé par la Mayo Clinic.
 
@@ -242,7 +242,9 @@ Cette information est présente dans le colonne "Protocole" de notre fichier cli
 
 Si par exemple nous avions souhaité comparer les patients atteints d'une atteinte du systeme nerveux central vs les autres nous aurions mis "Atteinte_SNC" à la place de "Protocole".
 
-Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
+⚠️Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. 
+
+Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
 
 Tout cela explique pourquoi il faut avoir des noms de colonnes simples, **sans espace**, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
 
@@ -259,7 +261,9 @@ Ici par exemple on ne va tester que la répartition des GB_au_diagnostic et l'â
 ### Une fois que vous avez choisi vos variables d'analyse et générer votre table_clinique il convient maintenant de la lire et de l'exporter. 
 
 Il existe 2 façon de faire. 
+
 La 1° consiste à générer une page HTML (format des pages internet) qui facilite la lecture de votre table d'analyse. 
+
 Pour crééer cette page HTML il faut utiliser la fonction **write2html**. 
 
 <img width="392" height="37" alt="image" src="https://github.com/user-attachments/assets/4dba393e-08e7-47df-9a09-e5238b0b3e8e" />
@@ -304,6 +308,6 @@ L'intérêt de cette fonction est majeure dans la réalisation d'études cliniqu
 
 Elle vous fera gagner un temps considérable et vous évitera de faire à la main les différents tests classiquement utilisés pour les analyses comparatives (chi2, Fisher, Mann-Whitney...).
 
-Mais surtout, si jamais vous constaté une erreur dans votre recueil clinique et que vous modifié votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. 
+Mais surtout, si jamais vous constatez une erreur dans votre recueil clinique et que vous modifiez votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. 
 
 Vous n'aurez pas besoin de refaire tous les tests, la fonction tableby le fera pour vous. 
