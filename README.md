@@ -1,4 +1,5 @@
-<img width="949" height="441" alt="image" src="https://github.com/user-attachments/assets/c0aaafe8-7db1-4bb8-ac8a-5db73cd5a10c" /><img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
+
+<img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
 
 # Initiation aux biostatistiques avec R 
 
@@ -195,7 +196,10 @@ A chaque fois que vous aller écrire le nom de l'objet (ici _fichier_clinique_) 
 
 ### Vérifier que vous avez correctement importé votre fichier
 Vous pouvez explorer ce que contient votre objet dans la fenêtre "Environnement" car une fois chargé il apparaitre à cet endroit.
-Vous n'avez qu'à cliquer sur le nom de votre objet pour le faire apparaître dans une nouvelle fenêtre au sein de votre projet. 
+Vous n'avez qu'à cliquer sur le nom de votre objet pour le faire apparaître dans une nouvelle fenêtre au sein de votre projet.
+
+<img width="949" height="441" alt="image" src="https://github.com/user-attachments/assets/c0aaafe8-7db1-4bb8-ac8a-5db73cd5a10c" />
+
 On peut également utiliser un raccourci pour charge l'objet via la commande "command + clic gauche " sur mac ou bien "ctl gauche + clic gauche " sur PC. 
 
 Voici à quoi ressemble notre objet 'fichier_clinique' dans l'exemple 
