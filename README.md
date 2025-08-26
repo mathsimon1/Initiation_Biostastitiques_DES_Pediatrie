@@ -256,7 +256,7 @@ Si par exemple vous ne souhaitez comparer qu'une seule ou deux variables par rap
 
 Ici par exemple on ne va tester que la répartition des GB_au_diagnostic et l'âge au diagnostic par rapport à la variable "Protocole". 
 
-Une fois que vous avez choisi vos variables d'analyse et générer votre table_clinique il convient maintenant de la lire et de l'exporter. 
+### Une fois que vous avez choisi vos variables d'analyse et générer votre table_clinique il convient maintenant de la lire et de l'exporter. 
 
 Il existe 2 façon de faire. 
 La 1° consiste à générer une page HTML (format des pages internet) qui facilite la lecture de votre table d'analyse. 
@@ -264,13 +264,23 @@ Pour crééer cette page HTML il faut utiliser la fonction **write2html**.
 
 <img width="392" height="37" alt="image" src="https://github.com/user-attachments/assets/4dba393e-08e7-47df-9a09-e5238b0b3e8e" />
 
-Cette fonction est simple, il suffit de placer en 1° la table_clinique que vous avez générée avec la fonction tableby précédemment suivi du nom que vous souhaitez donner à la page HTML créée, ici "table_clinique.html". 
+Cette fonction est simple, il suffit de placer en 1° la table_clinique que vous avez générée précédemment avec la fonction tableby suivi du nom que vous souhaitez donner à la page HTML créée, ici "table_clinique.html". 
 
 Il faut bien mettre le nom entre guillemet et terminer par .html pour que R comprenne que vous souhaitez crééer un fichier html. 
 
-La page html ainsi crééer se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...). 
+La page html ainsi créée se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...). 
 Elle s'ouvrira dans votre navigateur internet. 
 Voici ce que cela donne dans notre exemple : 
 
 <img width="1480" height="855" alt="image" src="https://github.com/user-attachments/assets/6f1c7087-a38e-4446-b29d-eb09d438c24d" />
+
+La 2° solution consiste à crééer directement un fichier word comprenant votre table_clinique d'analyse :
+
+<img width="374" height="31" alt="image" src="https://github.com/user-attachments/assets/6b86f8df-97f3-4a12-8426-13d767c0b7b7" />
+
+il faut utiliser la fonction **write2word** selon le même principe que précédemment mais en terminant le nom de votre fichier ainsi créé par .docx.
+Une fois encore le fichier word créé se situera dans le répertoire de votre projet. 
+Voici ce que cela donne : 
+
+<img width="1446" height="822" alt="image" src="https://github.com/user-attachments/assets/3d9ba3aa-a1a6-4478-b0cb-bec9d33d79b4" />
 
