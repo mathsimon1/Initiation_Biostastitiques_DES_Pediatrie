@@ -238,6 +238,8 @@ En premier vous devez donner un nom à la table clinique que vous allez génére
 
 Dans la fonction tableby on retrouve en 1° le groupe que vous souhaitez comparer : ici nous voulons comparer les patients traités selon un protocole Adulte vs Pédiatrique. 
 
+<img width="834" height="322" alt="image" src="https://github.com/user-attachments/assets/fc74dd53-a16c-4532-8fd1-66c88fdaf0e8" />
+
 Cette information est présente dans le colonne "Protocole" de notre fichier clinique donc il faut mettre le mot "Protocole" en 1° occurence. 
 
 Si par exemple nous avions souhaité comparer les patients atteints d'une atteinte du systeme nerveux central vs les autres nous aurions mis "Atteinte_SNC" à la place de "Protocole".
@@ -245,3 +247,10 @@ Si par exemple nous avions souhaité comparer les patients atteints d'une attein
 Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
 
 Tout cela explique pourquoi il faut avoir des noms de colonnes simples, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
+
+Après le nom de la variable de comparaison que vous avez choisi vous retrouver un tiddle (vague) il s'agit d'un symbole que l'on pourrait traduire par "en fonction de" cela veut dire que vous allez comparer la répartition des autres variables en fonction de votre variable d'intérêt. En mettant un point après le tiddle on veut comparer toutes les colonnes du fichier_clinique par rapport à la variable "Protocole". 
+Si par exemple vous ne souhaitez comparer qu'une seule ou deux variables par rapport au "Protocole" on remplacerait le "." par le ou les noms des colonnes à intégrer dans la comparaison : 
+<img width="702" height="34" alt="image" src="https://github.com/user-attachments/assets/ef057f4f-566b-410a-9ca2-7d512579c3cf" />
+Ici par exemple on ne va tester que la répartition des GB_au_diagnostic et l'âge au diagnostic par rapport à la variable "Protocole". 
+
+
