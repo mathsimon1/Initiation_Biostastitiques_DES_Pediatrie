@@ -248,9 +248,27 @@ Attention : il est impératif que le mot que vous mettez dans la fonction tableb
 
 Tout cela explique pourquoi il faut avoir des noms de colonnes simples, en évitant les majuscules quand cela est possible et les chiffres mais également faire attention à tout doublon dans le nom des colonnes. 
 
-Après le nom de la variable de comparaison que vous avez choisi vous retrouver un tiddle (vague) il s'agit d'un symbole que l'on pourrait traduire par "en fonction de" cela veut dire que vous allez comparer la répartition des autres variables en fonction de votre variable d'intérêt. En mettant un point après le tiddle on veut comparer toutes les colonnes du fichier_clinique par rapport à la variable "Protocole". 
+Après le nom de la variable de comparaison que vous avez choisi vous retrouver un tilde (vague) il s'agit d'un symbole que l'on pourrait traduire par "en fonction de" cela veut dire que vous allez comparer la répartition des autres variables en fonction de votre variable d'intérêt. 
+
+En mettant un point après le tilde on veut comparer toutes les colonnes du fichier_clinique par rapport à la variable "Protocole". 
+
 Si par exemple vous ne souhaitez comparer qu'une seule ou deux variables par rapport au "Protocole" on remplacerait le "." par le ou les noms des colonnes à intégrer dans la comparaison : 
+
 <img width="702" height="34" alt="image" src="https://github.com/user-attachments/assets/ef057f4f-566b-410a-9ca2-7d512579c3cf" />
+
 Ici par exemple on ne va tester que la répartition des GB_au_diagnostic et l'âge au diagnostic par rapport à la variable "Protocole". 
 
+Une fois que vous avez choisi vos variables d'analyse et générer votre table_clinique il convient maintenant de la lire et de l'exporter. 
+
+Il existe 2 façon de faire. 
+La 1° consiste à générer une page HTML (format des pages internet) qui facilite la lecture de votre table d'analyse. 
+Pour crééer cette page HTML il faut utiliser la fonction **write2html**. 
+<img width="392" height="37" alt="image" src="https://github.com/user-attachments/assets/4dba393e-08e7-47df-9a09-e5238b0b3e8e" />
+Cette fonction est simple, il suffit de placer en 1° la table_clinique que vous avez générée avec la fonction tableby précédemment suivi du nom que vous souhaitez donner à la page HTML créée, ici "table_clinique.html". 
+Il faut bien mettre le nom entre guillemet et terminer par .html pour que R comprenne que vous souhaitez crééer un fichier html. 
+La page html ainsi crééer se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...)
+Voici ce que cela donne dans notre exemple : 
+
+
+<img width="1046" height="772" alt="image" src="https://github.com/user-attachments/assets/e374dfa5-edcb-4505-a767-7bf3c7954149" />
 
