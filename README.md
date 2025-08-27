@@ -1,5 +1,6 @@
-
+<p align="center">
 <img width="127" alt="image2" src="https://github.com/user-attachments/assets/7c35f01a-45a5-452f-b88c-2a9a6037ee53" />
+</p>
 
 # Initiation aux biostatistiques avec R 
 
@@ -124,14 +125,18 @@ Rstudio se lancera automatiquement pour ouvrir votre projet.
 Une fois que le projet est ouvert vous arriverez sur un écran vide. 
 Il faut charger le script **Initiation_biostat_script.rmd** que vous trouverez en bas à droite. 
 
+<p align="center">
 <img width="612" alt="interface" src="https://github.com/user-attachments/assets/c6cb3fa6-4bbb-49cd-ae8e-998874d5165a" />
+</p>
 
 Pour charger le script il suffit de cliquer dessus. 
 Une fois que le script se charge vous devez installer les packages avec la fonction install.packages("Nom du package qui vous intéresse"). Cela vous permettra ensuite de les charger avec la fonction library("Nom du package qui vous intéresse").
 
 **Un package** est comme une boîte à outils spécialisée pour R. Chaque package contient un ensemble de fonctions, de données et de documentation qui étendent les capacités de base de R pour réaliser des tâches spécifiques. Quand on dit **"charger une librairie"**, cela signifie activer un package pour l'utiliser dans votre session R actuelle.
 
+<p align="center">
 <img width="612" alt="interface_V2" src="https://github.com/user-attachments/assets/3f62c331-b58b-4d52-99a0-25fd32328d1a" />
+</p>
 
 Les lignes de codes sont écrites au sein de chunk (ou "bloc de code"). Un chunk est délimité par trois guillemets (```) au début et à la fin, avec {r} juste après les premiers guillemets. 
 
@@ -188,8 +193,11 @@ Le CSV est le format le plus pratique pour importer des données tabulaires dans
 read.csv() : utilise "," comme séparateur et "." comme décimal (format anglo-saxon)
 read.csv2() : utilise ";" comme séparateur et "," comme décimal (format européen)
 ```
-<img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
 
+<p align="center">
+<img width="883" height="72" alt="image" src="https://github.com/user-attachments/assets/8e0ea08e-6329-478a-9da3-0512f9a05318" />
+</p>
+  
 Lorsque l'on importe un fichier dans R il faut lui attribuer un objet en le nommant et en utilisant le symbole "<-" 
 
 A chaque fois que vous aller écrire le nom de l'objet (ici _fichier_clinique_) R comprendra que vous faites référence au fichier que vous avez chargé dans cet objet. 
@@ -198,17 +206,24 @@ A chaque fois que vous aller écrire le nom de l'objet (ici _fichier_clinique_) 
 Vous pouvez explorer ce que contient votre objet dans la fenêtre "Environnement" car une fois chargé il apparaitre à cet endroit.
 Vous n'avez qu'à cliquer sur le nom de votre objet pour le faire apparaître dans une nouvelle fenêtre au sein de votre projet.
 
+<p align="center">
 <img width="949" height="441" alt="image" src="https://github.com/user-attachments/assets/c0aaafe8-7db1-4bb8-ac8a-5db73cd5a10c" />
+</p>
 
 On peut également utiliser un raccourci pour charger l'objet via la commande "command + clic gauche " sur mac ou bien "ctl gauche + clic gauche " sur PC. 
 
 Voici à quoi ressemble notre objet 'fichier_clinique' dans l'exemple 
 
+<p align="center">
 <img width="1498" height="661" alt="image" src="https://github.com/user-attachments/assets/6ae6c9ab-662d-4ec0-bd24-769ecb40b5a6" />
-
+</p>
+ 
 Si en revanche vous avez utilisé la mauvaise fonction pour charger le fichier .csv (read.csv à la place de read.csv2 par exemple) vous verrez que votre fichier ne s'est pas correctement chargé comme dans l'exemple ci-dessous :
 Vous n'aurez alors qu'à modifier votre fonction en mettant read.csv à la place de read.csv2 ou inversement et retester si votre fichier s'est correctement chargé. 
+
+<p align="center">
 <img width="1488" height="703" alt="image" src="https://github.com/user-attachments/assets/fab8d5a2-64e4-40a2-91e3-fa421fb30a4a" />
+</p>
 
 ---
 
@@ -235,8 +250,9 @@ Pour utiliser cette fonction il faut donc au préalable avoir installé (une foi
 En premier vous devez donner un nom à la table clinique que vous allez générer en utilisant la fonction tableby (comme le fichier clinique que vous avez crééer en utilisant la fonction read.csv au début). 
 
 Dans la fonction tableby on retrouve en 1° le groupe que vous souhaitez comparer : ici nous voulons comparer les patients traités selon un protocole Adulte vs Pédiatrique. 
-
+<p align="center">
 <img width="834" height="322" alt="image" src="https://github.com/user-attachments/assets/fc74dd53-a16c-4532-8fd1-66c88fdaf0e8" />
+</p>
 
 Cette information est présente dans le colonne "Protocole" de notre fichier clinique donc il faut mettre le mot "Protocole" en 1° occurence. 
 
@@ -253,8 +269,9 @@ Après le nom de la variable de comparaison que vous avez choisi vous retrouver 
 En mettant un point après le tilde on veut comparer toutes les colonnes du fichier_clinique par rapport à la variable "Protocole". 
 
 Si par exemple vous ne souhaitez comparer qu'une seule ou deux variables par rapport au "Protocole" on remplacerait le "." par le ou les noms des colonnes à intégrer dans la comparaison : 
-
+<p align="center">
 <img width="702" height="34" alt="image" src="https://github.com/user-attachments/assets/ef057f4f-566b-410a-9ca2-7d512579c3cf" />
+</p>
 
 Ici par exemple on ne va tester que la répartition des GB_au_diagnostic et l'âge au diagnostic par rapport à la variable "Protocole". 
 
@@ -265,35 +282,41 @@ Il existe 2 façon de faire.
 La 1° consiste à générer une page HTML (format des pages internet) qui facilite la lecture de votre table d'analyse. 
 
 Pour crééer cette page HTML il faut utiliser la fonction **write2html**. 
-
+<p align="center">
 <img width="392" height="37" alt="image" src="https://github.com/user-attachments/assets/4dba393e-08e7-47df-9a09-e5238b0b3e8e" />
+</p>
 
 Cette fonction est simple, il suffit de placer en 1° la table_clinique que vous avez générée précédemment avec la fonction tableby suivi du nom que vous souhaitez donner à la page HTML créée, ici "table_clinique.html". 
 
 Il faut bien mettre le nom entre guillemet et terminer par .html pour que R comprenne que vous souhaitez crééer un fichier html. 
 
 La page html ainsi créée se trouvera dans le répertoire de votre projet R (là où vous avez mis les fichiers cliniques, le fichier .rmd...).
-
+<p align="center">
 <img width="296" height="191" alt="image" src="https://github.com/user-attachments/assets/7df9e0ed-83c0-465c-b140-26fda4fb6bfe" />
+</p>
 
 Elle s'ouvrira dans votre navigateur internet. 
 Voici ce que cela donne dans notre exemple : 
-
+<p align="center">
 <img width="1480" height="855" alt="image" src="https://github.com/user-attachments/assets/6f1c7087-a38e-4446-b29d-eb09d438c24d" />
+</p>
 
 La 2° solution consiste à crééer directement un fichier word comprenant votre table_clinique d'analyse :
-
+<p align="center">
 <img width="374" height="31" alt="image" src="https://github.com/user-attachments/assets/6b86f8df-97f3-4a12-8426-13d767c0b7b7" />
+</p>
 
 il faut utiliser la fonction **write2word** selon le même principe que précédemment mais en terminant le nom de votre fichier ainsi créé par .docx.
 
 Une fois encore le fichier word créé se situera dans le répertoire de votre projet. 
-
+<p align="center">
 <img width="296" height="214" alt="image" src="https://github.com/user-attachments/assets/d5ecb161-6f6b-4acc-ba31-3cc3e411c6fb" />
+</p>
 
 Voici ce que cela donne : 
-
+<p align="center">
 <img width="1446" height="822" alt="image" src="https://github.com/user-attachments/assets/3d9ba3aa-a1a6-4478-b0cb-bec9d33d79b4" />
+</p>
 
 
 ## Conclusion sur la fonction tableby
@@ -323,18 +346,21 @@ Pour faire une courbe de survie vous devez dispoer d'une table clinique comporta
 Pour simplifier j'ai créé un 2° fichier .csv qui contient ces informations. Vous pouvez malgré tout travailler sur un seul et même fichier tout au long de votre script à condition que les informations de temps/évènement soient présentes dans votre table clinique. 
 
 Nous allons commencer par charger le fichier qui contient les données de survie et qui est inclus dans le dossier que vous avez téléchargé sous le nom de _fichier_clinique_data_survie.csv_. Pour voir comment charger ce fichier et vérifier son intégration vous pouvez vous référer à la 1° partie du didacticiel. 
-
+<p align="center">
 <img width="1005" height="61" alt="image" src="https://github.com/user-attachments/assets/e72ac877-bd75-491b-98c1-54495f8cdc9b" />
+</p>
 
 Un patient ayant une os à 2.1 avec un évènement noté 1 signifie qu'il a présenté l'évènement (ici le décès) à 2.1 ans du suivi. Si l'évènement est noté "0" cela signifie que son suivi s'arrête après 2.1 ans et qu'il n'a pas présenté l'évènement durant cette période de suivi. Ce patient est dit censuré à partir de 2.1 ans. 
-
+<p align="center">
 <img width="396" height="262" alt="image" src="https://github.com/user-attachments/assets/4b92d158-ab16-4261-822d-9e23781c1f79" />
+</p>
 
 Avant de faire une courbe de survie vous devez générer un objet intermédiaire avec la fonction _survfit()_ qui contiendra les informations nécessaires à la réalisation de la courbe de survie lorsqu'on utilisera la fonction _ggsurvplot()_
 
 Voici comment se décompose la fonction survfit()
-
+<p align="center">
 <img width="824" height="276" alt="image" src="https://github.com/user-attachments/assets/ae1098d2-7fe4-4489-8802-2c55b0914230" />
+</p>
 
 Dans l'exemple ci-dessus nous allons analyser la survie des patients selon le protocole reçu (Adulte vs Pédiatrique). 
 Si vous souhaitez comparer la survie selon une autre variable il faut remplacer "Protocole" par le nom de votre nouvelle colonne contenant la variable à comparer. 
@@ -342,28 +368,31 @@ Si vous souhaitez comparer la survie selon une autre variable il faut remplacer 
 Par exemple si vous souhaitez comparer la survie des patients selon leur statut SNC il faut remplacer "Protocole" par Atteinte_SNC
 
 ⚠️Attention à toujours bien respecter l'orthographe de votre colonne telle que vous l'avez noté dans votre fichier clinique !
-
+<p align="center">
 <img width="981" height="33" alt="image" src="https://github.com/user-attachments/assets/437fd065-21da-4282-9895-ce1bde08617a" />
+</p>
 
 Enfin, si vous souhaitez analyser la survie globale de la cohorte entière il suffit de remplacer "Protocole" par le chiffre "1".
-
+<p align="center">
 <img width="995" height="32" alt="image" src="https://github.com/user-attachments/assets/c619f6a5-a066-4bc5-818d-5c5ced51c9b2" />
-
+</p>
 
 ## Création de la courbe de survie
 
 Maintenant que vous avez créé votre objet de type survfit contenant les informations de survie vous allez pouvoir générer la courbe de survie correspondant à la comparaison que vous souhaitez. 
 Nous allons donc réaliser la courbe de survie des patients selon le protocole reçu en utilisant la 1° formule de l'exemple
-
+<p align="center">
 <img width="671" height="34" alt="image" src="https://github.com/user-attachments/assets/3196e086-7832-4563-9849-2b61eb519e87" />
+</p>
 
 Une fois l'objet survfit généré (ici nommé _survie_selon_protocole_ vous allez utiliser la fonction ggsurvplot() du package survminer qu'il faudra charger au début du script : library(survminer)
 
 Voici comment se décompose la fonction ggsurvplot() qui est un peu plus complexe : 
-
+<p align="center">
 <img width="908" height="285" alt="image" src="https://github.com/user-attachments/assets/fe36102e-074d-427f-9191-b5dbf558e52f" />
+</p>
 
 Et voilà ce que vous obtenez dans l'exemple : 
-
+<p align="center">
 <img width="437" height="473" alt="image" src="https://github.com/user-attachments/assets/0751019a-111e-4686-8200-e8d00244c6e2" />
-
+</p>
