@@ -363,4 +363,7 @@ Voici comment se décompose la fonction ggsurvplot() qui est un peu plus complex
 
 <img width="908" height="285" alt="image" src="https://github.com/user-attachments/assets/fe36102e-074d-427f-9191-b5dbf558e52f" />
 
+Et voilà ce que vous obtenez dans l'exemple : 
+
+<img width="437" height="473" alt="image" src="https://github.com/user-attachments/assets/0751019a-111e-4686-8200-e8d00244c6e2" />
 
