@@ -343,5 +343,8 @@ Par exemple si vous souhaitez comparer la survie des patients selon leur statut 
 
 <img width="981" height="33" alt="image" src="https://github.com/user-attachments/assets/437fd065-21da-4282-9895-ce1bde08617a" />
 
+Enfin, si vous souhaitez analyser la survie globale de la cohorte entière il suffit de remplacer "Protocole" par le chiffre "1".
+
+<img width="995" height="32" alt="image" src="https://github.com/user-attachments/assets/c619f6a5-a066-4bc5-818d-5c5ced51c9b2" />
 
 
