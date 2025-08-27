@@ -316,6 +316,8 @@ Mais surtout, si jamais vous constatez une erreur dans votre recueil clinique et
 
 Nous allons maintenant voir comment faire une courbe de survie de type Kaplan-Meier avec la fonction ggsurvplot. 
 
+## Chargement d'un fichier contenant des informations de survie / évènement et création d'un objet _survfit_
+
 Pour faire une courbe de survie vous devez dispoer d'une table clinique comportant une variable de temps (ici nommée "os" pour overall survival) et un évènement (ici la survie colonne "dead" dont les valeurs doivent être "1" ou "0"). 
 
 Pour simplifier j'ai créé un 2° fichier .csv qui contient ces informations. Vous pouvez malgré tout travailler sur un seul et même fichier tout au long de votre script à condition que les informations de temps/évènement soient présentes dans votre table clinique. 
@@ -347,4 +349,17 @@ Enfin, si vous souhaitez analyser la survie globale de la cohorte entière il su
 
 <img width="995" height="32" alt="image" src="https://github.com/user-attachments/assets/c619f6a5-a066-4bc5-818d-5c5ced51c9b2" />
 
+
+## Création de la courbe de survie
+
+Maintenant que vous avez créé votre objet de type survfit contenant les informations de survie vous allez pouvoir générer la courbe de survie correspondant à la comparaison que vous souhaitez. 
+Nous allons donc réaliser la courbe de survie des patients selon le protocole reçu en utilisant la 1° formule de l'exemple
+
+<img width="671" height="34" alt="image" src="https://github.com/user-attachments/assets/3196e086-7832-4563-9849-2b61eb519e87" />
+
+Une fois l'objet survfit généré (ici nommé _survie_selon_protocole_ vous allez utiliser la fonction ggsurvplot() du package survminer qu'il faudra charger au début du script : library(survminer)
+
+Voici comment se décompose la fonction ggsurvplot() qui est un peu plus complexe : 
+
+<img width="907" height="326" alt="image" src="https://github.com/user-attachments/assets/8a0b4739-184c-4c94-8b13-59ab9497e6a5" />
 
