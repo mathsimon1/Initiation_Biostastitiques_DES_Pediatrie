@@ -318,7 +318,7 @@ Nous allons maintenant voir comment faire une courbe de survie de type Kaplan-Me
 
 ## Chargement d'un fichier contenant des informations de survie / évènement et création d'un objet _survfit_
 
-Pour faire une courbe de survie vous devez dispoer d'une table clinique comportant une variable de temps (ici nommée "os" pour overall survival) et un évènement (ici la survie colonne "dead" dont les valeurs doivent être "1" ou "0"). 
+Pour faire une courbe de survie vous devez dispoer d'une table clinique comportant une variable de temps (ici nommée "os" pour overall survival) et un évènement (ici la survie colonne "died" dont les valeurs doivent être "1" ou "0"). 
 
 Pour simplifier j'ai créé un 2° fichier .csv qui contient ces informations. Vous pouvez malgré tout travailler sur un seul et même fichier tout au long de votre script à condition que les informations de temps/évènement soient présentes dans votre table clinique. 
 
