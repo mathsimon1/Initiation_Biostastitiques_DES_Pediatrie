@@ -309,3 +309,30 @@ L'intérêt de cette fonction est majeure dans la réalisation d'études cliniqu
 Elle vous fera gagner un temps considérable et vous évitera de faire à la main les différents tests classiquement utilisés pour les analyses comparatives (chi2, Fisher, Mann-Whitney...).
 
 Mais surtout, si jamais vous constatez une erreur dans votre recueil clinique et que vous modifiez votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. Vous n'aurez pas besoin de refaire tous les tests, la fonction tableby le fera pour vous. 
+
+---
+
+# Troisième Partie : Faire une courbe de survie avec la fonction ggsurvplot
+
+Nous allons maintenant voir comment faire une courbe de survie de type Kaplan-Meier avec la fonction ggsurvplot. 
+
+Pour faire une courbe de survie vous devez dispoer d'une table clinique comportant une variable de temps (ici nommée "os" pour overall survival) et un évènement (ici la survie colonne "dead" dont les valeurs doivent être "1" ou "0"). 
+
+Pour simplifier j'ai créé un 2° fichier .csv qui contient ces informations. Vous pouvez malgré tout travailler sur un seul et même fichier tout au long de votre script à condition que les informations de temps/évènement soient présentes dans votre table clinique. 
+
+Nous allons commencer par charger le fichier qui contient les données de survie et qui est inclus dans le dossier que vous avez téléchargé sous le nom de _fichier_clinique_data_survie.csv_. Pour voir comment charger ce fichier et vérifier son intégration vous pouvez vous référer à la 1° partie du didacticiel. 
+
+<img width="1005" height="61" alt="image" src="https://github.com/user-attachments/assets/e72ac877-bd75-491b-98c1-54495f8cdc9b" />
+
+Un patient ayant une os à 2.1 avec un évènement noté 1 signifie qu'il a présenté l'évènement (ici le décès) à 2.1 ans du suivi. Si l'évènement est noté "0" cela signifie que son suivi s'arrête après 2.1 ans et qu'il n'a pas présenté l'évènement durant cette période de suivi. Ce patient est dit censuré à partir de 2.1 ans. 
+
+<img width="396" height="262" alt="image" src="https://github.com/user-attachments/assets/4b92d158-ab16-4261-822d-9e23781c1f79" />
+
+Avant de faire une courbe de survie vous devez générer un objet intermédiaire avec la fonction _survfit()_ qui contiendra les informations nécessaires à la réalisation de la courbe de survie lorsqu'on utilisera la fonction _ggsurvplot()_
+
+Voici comment se décompose la fonction survfit()
+
+<img width="824" height="276" alt="image" src="https://github.com/user-attachments/assets/ae1098d2-7fe4-4489-8802-2c55b0914230" />
+
+
+
