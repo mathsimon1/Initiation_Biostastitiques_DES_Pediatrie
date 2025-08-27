@@ -361,5 +361,6 @@ Une fois l'objet survfit généré (ici nommé _survie_selon_protocole_ vous all
 
 Voici comment se décompose la fonction ggsurvplot() qui est un peu plus complexe : 
 
-<img width="907" height="326" alt="image" src="https://github.com/user-attachments/assets/8a0b4739-184c-4c94-8b13-59ab9497e6a5" />
+<img width="908" height="285" alt="image" src="https://github.com/user-attachments/assets/fe36102e-074d-427f-9191-b5dbf558e52f" />
+
 
