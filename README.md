@@ -334,7 +334,7 @@ Voici comment se décompose la fonction survfit()
 
 <img width="824" height="276" alt="image" src="https://github.com/user-attachments/assets/ae1098d2-7fe4-4489-8802-2c55b0914230" />
 
-Dans l'exemple ci-dessous nous allons analyser la survie des patients selon le protocole reçu (Adulte vs Pédiatrique). 
+Dans l'exemple ci-dessus nous allons analyser la survie des patients selon le protocole reçu (Adulte vs Pédiatrique). 
 Si vous souhaitez comparer la survie selon une autre variable il faut remplacer "Protocole" par le nom de votre nouvelle colonne contenant la variable à comparer. 
 
 Par exemple si vous souhaitez comparer la survie des patients selon leur statut SNC il faut remplacer "Protocole" par Atteinte_SNC
