@@ -308,6 +308,4 @@ L'intérêt de cette fonction est majeure dans la réalisation d'études cliniqu
 
 Elle vous fera gagner un temps considérable et vous évitera de faire à la main les différents tests classiquement utilisés pour les analyses comparatives (chi2, Fisher, Mann-Whitney...).
 
-Mais surtout, si jamais vous constatez une erreur dans votre recueil clinique et que vous modifiez votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. 
-
-Vous n'aurez pas besoin de refaire tous les tests, la fonction tableby le fera pour vous. 
+Mais surtout, si jamais vous constatez une erreur dans votre recueil clinique et que vous modifiez votre table clinique, il ne vous suffira qu'à relancer la fonction après avoir chargé votre nouveau fichier clinique pour refaire les tests comparatifs. Vous n'aurez pas besoin de refaire tous les tests, la fonction tableby le fera pour vous. 
