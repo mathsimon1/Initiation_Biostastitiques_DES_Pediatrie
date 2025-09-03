@@ -406,16 +406,22 @@ Et voilà ce que vous obtenez dans l'exemple :
 
 Le modèle de Cox est un modèle de régression utilisé en analyse de survie.
 	•	La variable dépendante est le temps jusqu’à survenue d’un événement (rechute, décès, complication…).
+ 
 	•	L’estimation produite est le Hazard Ratio (HR), qui exprime le rapport entre les risques instantanés de deux groupes de patients.
+ 
 	•	On dit « proportionnel » car on suppose que le rapport de risques (HR) est constant dans le temps (hypothèse des risques proportionnels).
+ 
 	•	Exemple : HR = 2 signifie que le risque instantané de l’événement est deux fois plus élevé dans le groupe exposé que dans le groupe témoin.
 
 ⸻
 
 🔹 Analyse univariée
 	•	On introduit un seul facteur explicatif à la fois dans le modèle de Cox.
+ 
 	•	Objectif : identifier les variables potentiellement associées au pronostic.
+ 
 	•	Limite : on ne tient pas compte des facteurs de confusion → une association peut être en réalité due à une autre variable corrélée.
+ 
 	•	Exemple : en univarié, « absence de traitement » peut sembler associée à un mauvais pronostic, mais c’est peut-être parce que les patients non traités étaient plus âgés ou plus fragiles.
 
 ⸻
