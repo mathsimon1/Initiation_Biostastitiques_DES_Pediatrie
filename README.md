@@ -37,10 +37,10 @@ RStudio sert principalement à:
 C'est essentiellement un environnement de travail convivial pour R, comme un logiciel tout-en-un qui rend l'analyse de données beaucoup plus simple que de travailler directement avec R dans une console basique. Comme R, il est totalement gratuit. 
 
   ### Installer R
-                          | Système d'exploitation | Lien téléchargement |
-                          | :-------- | :------- |
-                          | Windows |  https://cran.r-project.org/bin/windows/base/|
-                          | MacOS |  https://cran.r-project.org/bin/macosx/|
+| Système d'exploitation | Lien téléchargement |
+| :-------- | :------- |
+| Windows |  https://cran.r-project.org/bin/windows/base/|
+| MacOS |  https://cran.r-project.org/bin/macosx/|
 
   ### Installer RStudio
 Une fois R correctement installé, rendez-vous sur http://www.rstudio.com/products/rstudio/download/
