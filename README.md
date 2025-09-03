@@ -396,3 +396,32 @@ Et voilà ce que vous obtenez dans l'exemple :
 <p align="center">
 <img width="437" height="473" alt="image" src="https://github.com/user-attachments/assets/0751019a-111e-4686-8200-e8d00244c6e2" />
 </p>
+
+
+---
+
+# Quatrième Partie : Faire une analyse univariée et multivariée en utilisant un modèle de Cox
+
+🔹 Modèle de Cox (Cox proportional hazards model)
+
+Le modèle de Cox est un modèle de régression utilisé en analyse de survie.
+	•	La variable dépendante est le temps jusqu’à survenue d’un événement (rechute, décès, complication…).
+	•	L’estimation produite est le Hazard Ratio (HR), qui exprime le rapport entre les risques instantanés de deux groupes de patients.
+	•	On dit « proportionnel » car on suppose que le rapport de risques (HR) est constant dans le temps (hypothèse des risques proportionnels).
+	•	Exemple : HR = 2 signifie que le risque instantané de l’événement est deux fois plus élevé dans le groupe exposé que dans le groupe témoin.
+
+⸻
+
+🔹 Analyse univariée
+	•	On introduit un seul facteur explicatif à la fois dans le modèle de Cox.
+	•	Objectif : identifier les variables potentiellement associées au pronostic.
+	•	Limite : on ne tient pas compte des facteurs de confusion → une association peut être en réalité due à une autre variable corrélée.
+	•	Exemple : en univarié, « absence de traitement » peut sembler associée à un mauvais pronostic, mais c’est peut-être parce que les patients non traités étaient plus âgés ou plus fragiles.
+
+⸻
+
+🔹 Analyse multivariée
+	•	On introduit plusieurs variables simultanément dans le modèle.
+	•	Objectif : évaluer l’effet indépendant de chaque variable sur le risque, en ajustant sur les autres.
+	•	Cela permet d’identifier les facteurs pronostiques indépendants.
+	•	Exemple : après ajustement sur l’âge et le stade, seul le type de traitement reste significativement associé à la survie → on peut conclure qu’il s’agit d’un facteur pronostique indépendant.
