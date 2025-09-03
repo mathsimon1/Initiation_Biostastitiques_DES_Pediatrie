@@ -472,3 +472,43 @@ Puis en générant le forrest plot avec la fonction forest_model on obtient l'an
 <img width="1860" height="548" alt="image" src="https://github.com/user-attachments/assets/7cf8b3e0-2f01-40de-8636-c4304ad7cdad" />
 </p>
 
+Dans cet exemple, on observe que le hazard ratio (HR) associé au protocole passe de 0,21 en analyse univariée à 0,31 en analyse multivariée. 
+
+Cela signifie que lorsque l’on ajoute les deux autres variables dans le modèle, l’effet du protocole est ajusté en tenant compte de leur influence. 
+
+L’HR est donc modifié parce qu’une partie de l’effet observé initialement en univarié était liée à ces variables de confusion. 
+
+En multivarié, on obtient une estimation plus précise de l’effet propre du protocole, indépendant des autres facteurs considérés.
+
+---
+<summary>Astuces pour plus tard  </summary>
+
+### Renommer des colonnes si nécessaire
+```ruby
+names(donnees_cliniques)[1] <- "ID_Patient"
+```
+
+### Convertir des variables en facteurs (pour les variables catégorielles)
+```
+donnees_cliniques$Sexe <- factor(donnees_cliniques$Sexe)
+donnees_cliniques$Groupe <- factor(donnees_cliniques$Groupe)
+```
+
+### Transformer des données numériques si besoin
+```
+donnees_cliniques$Age <- as.numeric(donnees_cliniques$Age)
+```
+
+## Gérer les valeurs manquantes
+### Identifier les valeurs manquantes
+```
+colSums(is.na(donnees_cliniques))
+```
+### Créer un sous-ensemble sans les lignes ayant des valeurs manquantes
+```
+donnees_completes <- na.omit(donnees_cliniques)
+```
+### OU remplacer les valeurs manquantes par la moyenne (pour les variables numériques)
+```
+donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
+```
