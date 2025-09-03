@@ -473,13 +473,13 @@ Puis en générant le forrest plot avec la fonction forest_model on obtient l'an
 </p>
 
 > [!IMPORTANT]
-Dans cet exemple, on observe que le hazard ratio (HR) associé au protocole passe de 0,28 en analyse univariée à 0,31 en analyse multivariée. 
+>Dans cet exemple, on observe que le hazard ratio (HR) associé au protocole passe de 0,28 en analyse univariée à 0,31 en analyse multivariée. 
 
-Cela signifie que lorsque l’on ajoute les deux autres variables dans le modèle, l’effet du protocole est ajusté en tenant compte de leur influence. 
+>Cela signifie que lorsque l’on ajoute les deux autres variables dans le modèle, l’effet du protocole est ajusté en tenant compte de leur influence. 
 
-L’HR est donc modifié parce qu’une partie de l’effet observé initialement en univarié était liée à ces variables de confusion. 
+>L’HR est donc modifié parce qu’une partie de l’effet observé initialement en univarié était liée à ces variables de confusion. 
 
-En multivarié, on obtient une estimation plus précise de l’effet propre du protocole, indépendant des autres facteurs considérés.
+>En multivarié, on obtient une estimation plus précise de l’effet propre du protocole, indépendant des autres facteurs considérés.
 
 ---
 <details>
