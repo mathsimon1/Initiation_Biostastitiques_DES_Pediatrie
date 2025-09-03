@@ -258,7 +258,8 @@ Cette information est présente dans le colonne "Protocole" de notre fichier cli
 
 Si par exemple nous avions souhaité comparer les patients atteints d'une atteinte du systeme nerveux central vs les autres nous aurions mis "Atteinte_SNC" à la place de "Protocole".
 
-⚠️Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. 
+> [!IMPORTANT]
+>⚠️Attention : il est impératif que le mot que vous mettez dans la fonction tableby soit strictement identique au titre de votre colonne. Il ne doit pas contenir d'espace ni de chiffre en première position. 
 
 Si vous vous trompez même sur une majuscule la fonction ne reconnaitra pas votre colonne dans le fichier d'analyse et vous aurez un message d'erreur. 
 
@@ -366,8 +367,9 @@ Dans l'exemple ci-dessus nous allons analyser la survie des patients selon le pr
 Si vous souhaitez comparer la survie selon une autre variable il faut remplacer "Protocole" par le nom de votre nouvelle colonne contenant la variable à comparer. 
 
 Par exemple si vous souhaitez comparer la survie des patients selon leur statut SNC il faut remplacer "Protocole" par Atteinte_SNC
+> [!IMPORTANT]
+> Attention à toujours bien respecter l'orthographe du titre de votre colonne - Si la colonne dans votre table s’appelle Protocole, vous devez écrire exactement Protocole dans vos formules et non protocole ou PROTOCOLE. Sinon R renverra une erreur ou considérera qu’il s’agit d’une autre variable.
 
-⚠️Attention à toujours bien respecter l'orthographe de votre colonne telle que vous l'avez noté dans votre fichier clinique !
 <p align="center">
 <img width="981" height="33" alt="image" src="https://github.com/user-attachments/assets/437fd065-21da-4282-9895-ce1bde08617a" />
 </p>
