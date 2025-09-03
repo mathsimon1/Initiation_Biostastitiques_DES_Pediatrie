@@ -4,19 +4,29 @@
 
 # Initiation aux biostatistiques avec R 
 
-Cette formation d'une journée vise à vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d'analyses statistiques dans le cadre de vos recherches et notamment de votre thèse de médecine ou de votre mémoire.
+Cette journée de formation a pour objectif de vous transmettre les fondamentaux en bioinformatique nécessaires à la réalisation d’analyses statistiques dans le cadre de vos travaux de recherche, en particulier pour votre thèse de médecine ou vos mémoire du DU.
 
-Destinée à tous les internes de pédiatrie, elle ne présuppose aucune connaissance préalable en programmation ou en statistique. 
+Cette formation ne requiert aucune connaissance préalable en programmation ou en statistique.
 
-Notre objectif est de vous transmettre les compétences miminales pour mener à bien vos projets scientifiques afin de vous donner l'assurance et l'envie de réaliser vos analyses statistiques mais également de générer des graphiques et des courbes de survie. 
+Notre ambition est de vous donner les compétences minimales indispensables pour mener à bien vos projets scientifiques : savoir réaliser vos propres analyses statistiques, construire des graphiques clairs et générer des courbes de survie. 
 
-R est un langage de programmation utilisé principalement dans le cadre de la recherche biomédicale. Il s'utilise via RStudio. Il s'agit d'un outil très puissant permettant de faire des analyses statistiques mais il permet également de générer des figures de grande qualité que vous pourrez utiliser directement dans vos publications.
+Nous souhaitons également vous donner la confiance et l’envie de poursuivre par vous-même vos explorations en analyse de données.
 
-Enfin, il a le mérite d'être totalement gratuit contrairement aux autres logiciels de statistiques (GraphPad Prism, STATA, SAS...)
+R est un langage de programmation largement utilisé dans le domaine de la recherche biomédicale. Couplé à RStudio, il constitue un environnement de travail complet, à la fois puissant et accessible, qui vous permettra de mettre rapidement en pratique les notions vues au cours de cette formation.
+
+R est un outil très puissant qui vous permettra non seulement de réaliser des analyses statistiques adaptées à vos données, mais également de générer des figures de grande qualité, directement exploitables dans vos présentations ou vos publications scientifiques.
+
+Un autre avantage majeur est que R est un logiciel entièrement gratuit et open source, contrairement à la plupart des autres logiciels de statistiques (GraphPad Prism, STATA, SAS…), souvent coûteux et parfois limités en fonctionnalités. 
+
+Cela en fait une solution accessible à tous et parfaitement adaptée à un usage académique.
 
 ## Pré requis
 
-Avant la journée de formation il est nécessaire de télécharger et installer le langage informatique que l'on va utiliser (langage R) et la plateforme sur laquelle nous allons utiliser ce langage de programmation (RStudio). 
+Avant la journée de formation, il est nécessaire d’installer sur votre ordinateur :
+	1.	Le langage R, qui servira de moteur pour toutes les analyses statistiques.
+	2.	RStudio, l’environnement de travail convivial qui permet d’utiliser R plus facilement.
+
+Ces deux installations sont gratuites et compatibles avec Windows et macOS.
 
 RStudio sert principalement à:
 - Écrire et exécuter du code R plus facilement
@@ -27,10 +37,10 @@ RStudio sert principalement à:
 C'est essentiellement un environnement de travail convivial pour R, comme un logiciel tout-en-un qui rend l'analyse de données beaucoup plus simple que de travailler directement avec R dans une console basique. Comme R, il est totalement gratuit. 
 
   ### Installer R
-| Système d'exploitation | Lien téléchargement |
-| :-------- | :------- |
-| Windows |  https://cran.r-project.org/bin/windows/base/|
-| MacOS |  https://cran.r-project.org/bin/macosx/|
+                          | Système d'exploitation | Lien téléchargement |
+                          | :-------- | :------- |
+                          | Windows |  https://cran.r-project.org/bin/windows/base/|
+                          | MacOS |  https://cran.r-project.org/bin/macosx/|
 
   ### Installer RStudio
 Une fois R correctement installé, rendez-vous sur http://www.rstudio.com/products/rstudio/download/
