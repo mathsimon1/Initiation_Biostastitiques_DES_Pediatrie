@@ -436,6 +436,8 @@ Cela permet d’identifier les facteurs pronostiques indépendants.
 
 Exemple : après ajustement sur l’âge et le stade, seul le type de traitement reste significativement associé à la survie → on peut conclure qu’il s’agit d’un facteur pronostique indépendant.
 
+## Analyse univariée
+
 Voyons à quoi ressemble la formule pour faire une analyse univariée selon un modèle de Cox : 
 
 <p align="center">
@@ -453,5 +455,20 @@ Une fois l'objet coxph() généré (ici nommé _cox_univarié_ il faut utiliser 
 
 <p align="center">
 <img width="1860" height="610" alt="image" src="https://github.com/user-attachments/assets/fe29debb-c97a-419e-966a-6f517738d214" />
+</p>
+
+## Analyse multivariée
+
+Pour réaliser une analyse multivariée il suffit d'ajouter les variables d'ajustement que vous souhaitez ajouter au modèle. 
+
+Ici nous avons testé pour l'instant l'impact du Protocole sur la survie globale. Si on souhaite ajouter d'autres variables comme par exemple le sexe (Male) et  l'atteinte du SNC, il suffit de les ajouter dans la formule comme ceci : 
+
+<p align="center">
+<img width="749" height="33" alt="image" src="https://github.com/user-attachments/assets/8df8a5ff-8f97-4fe4-a746-8beeaf82af10" />
+</p>
+
+Puis en générant le forrest plot avec la fonction forest_model on obtient l'analyse multivariée intégrant les 3 variables Protocole, Male et Atteinte du SNC : 
+<p align="center">
+<img width="1860" height="548" alt="image" src="https://github.com/user-attachments/assets/7cf8b3e0-2f01-40de-8636-c4304ad7cdad" />
 </p>
 
