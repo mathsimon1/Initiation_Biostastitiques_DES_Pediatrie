@@ -481,7 +481,8 @@ L’HR est donc modifié parce qu’une partie de l’effet observé initialemen
 En multivarié, on obtient une estimation plus précise de l’effet propre du protocole, indépendant des autres facteurs considérés.
 
 ---
-<summary>Astuces pour plus tard  </summary>
+<details>
+<summary>Astuces pour plus tard</summary>
 
 ### Renommer des colonnes si nécessaire
 ```ruby
@@ -512,3 +513,4 @@ donnees_completes <- na.omit(donnees_cliniques)
 ```
 donnees_cliniques$Variable_Num[is.na(donnees_cliniques$Variable_Num)] <- mean(donnees_cliniques$Variable_Num, na.rm = TRUE)
 ```
+<details>
