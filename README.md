@@ -444,8 +444,9 @@ Voyons à quoi ressemble la formule pour faire une analyse univariée selon un m
 <img width="830" height="364" alt="image" src="https://github.com/user-attachments/assets/22167d8d-3e93-4ed4-a93c-123595f02fa4" />
 </p>
 
-Cette formule ressemble à la formule pour faire la courbe de survie (on retrouve la fonction **_surv()_** avec les paramètres "temps/évènement + variable de comparaison et le fichier clinique"). 
-La différence réside dans le fait que l'on va utiliser la fonction **_ coxph()_** au lieu de la fonction **_survfit() _**
+> [!TIP]
+>Cette formule ressemble à la formule pour faire la courbe de survie (on retrouve la fonction **_surv()_** avec les paramètres "temps/évènement + variable de comparaison et le fichier clinique"). 
+>La différence réside dans le fait que l'on va utiliser la fonction **_ coxph()_** au lieu de la fonction **_survfit() _**
 
 <p align="center">
 <img width="239" height="45" alt="image" src="https://github.com/user-attachments/assets/6880203b-a408-4147-a35d-17c14f9d44a9" />
